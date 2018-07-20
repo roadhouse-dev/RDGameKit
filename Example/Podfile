@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RDGameKit_Example' do
+  pod 'RDGameKit', :path => '../'
+
+  target 'RDGameKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
