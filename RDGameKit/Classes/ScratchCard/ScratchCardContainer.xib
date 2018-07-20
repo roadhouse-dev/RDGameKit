@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScratchCardContainer" customModule="RoadhouseGameKit" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScratchCardContainer" customModule="RDGameKit" customModuleProvider="target">
             <connections>
                 <outlet property="backgroundImageView" destination="Ita-5o-klb" id="vci-08-U2G"/>
                 <outlet property="bottomLogoImageView" destination="Bge-gX-irf" id="zQL-mB-HJI"/>
@@ -30,7 +30,7 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rsc-aN-Qtu">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW2-fy-V6A" customClass="ScratchCard" customModule="RoadhouseGameKit">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zW2-fy-V6A" customClass="ScratchCard" customModule="RDGameKit">
                     <rect key="frame" x="57.5" y="203.5" width="260" height="260"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
