@@ -1,0 +1,6 @@
+framework module RDGameKit {
+  umbrella header "RDGameKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - RDGameKit (0.1.0)
+
+DEPENDENCIES:
+  - RDGameKit (from `../`)
+
+EXTERNAL SOURCES:
+  RDGameKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RDGameKit: 5105325a0dc2ff9daaa23fde5e660c5d60291773
+
+PODFILE CHECKSUM: 0148f8860905816abcc644c50ab1ec0f26e5046e
+
+COCOAPODS: 1.5.3

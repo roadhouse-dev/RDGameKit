@@ -1,0 +1,6 @@
+framework module Pods_RDGameKit_Tests {
+  umbrella header "Pods-RDGameKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
