@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mhx-jU-r1g">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scratch ExampleVC-->
+        <scene sceneID="M3e-sh-cJZ">
+            <objects>
+                <viewController id="x74-da-LZY" customClass="ScratchExampleVC" customModule="RoadhouseGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="npH-gj-yQh"/>
+                        <viewControllerLayoutGuide type="bottom" id="y8G-Hl-mtn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YFy-5D-6P5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eh-ks-Lbm" customClass="ScratchCardContainer" customModule="RDGameKit">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6eh-ks-Lbm" firstAttribute="leading" secondItem="YFy-5D-6P5" secondAttribute="leading" id="FYR-mc-1GN"/>
+                            <constraint firstItem="y8G-Hl-mtn" firstAttribute="top" secondItem="6eh-ks-Lbm" secondAttribute="bottom" id="dYj-D8-2Mj"/>
+                            <constraint firstItem="6eh-ks-Lbm" firstAttribute="top" secondItem="npH-gj-yQh" secondAttribute="bottom" id="kDs-9N-vIE"/>
+                            <constraint firstAttribute="trailing" secondItem="6eh-ks-Lbm" secondAttribute="trailing" id="ljQ-og-7QW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scratchCardContainer" destination="6eh-ks-Lbm" id="3hP-hT-AxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g31-Uo-pfO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="-209"/>
+        </scene>
+        <!--Tic Tac ToeVC-->
+        <scene sceneID="Tut-ip-MMK">
+            <objects>
+                <viewController id="DfQ-r5-Vhc" customClass="TicTacToeVC" customModule="RoadhouseGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3bt-pU-Q6r"/>
+                        <viewControllerLayoutGuide type="bottom" id="sKT-HP-dzx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E6z-ku-7c7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D53-Yx-Vic" customClass="TicTacToeContainer" customModule="RDGameKit">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D53-Yx-Vic" firstAttribute="leading" secondItem="E6z-ku-7c7" secondAttribute="leading" id="CQZ-gz-mav"/>
+                            <constraint firstAttribute="trailing" secondItem="D53-Yx-Vic" secondAttribute="trailing" id="KU0-Qu-tVP"/>
+                            <constraint firstItem="sKT-HP-dzx" firstAttribute="top" secondItem="D53-Yx-Vic" secondAttribute="bottom" id="Ycc-tP-dG4"/>
+                            <constraint firstItem="D53-Yx-Vic" firstAttribute="top" secondItem="3bt-pU-Q6r" secondAttribute="bottom" id="r1V-i1-H1m"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ticTacToeContainer" destination="D53-Yx-Vic" id="6XA-ta-hmi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nh7-Md-6Xn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="1200"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="2Ks-aI-gJl">
+            <objects>
+                <tableViewController id="XFA-np-N7h" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UQw-7y-ceU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="XUA-fO-bkj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hRA-kw-68T">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hRA-kw-68T" id="prH-iA-opx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scratch Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUs-13-oRd">
+                                                    <rect key="frame" x="123.5" y="11.5" width="128.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RUs-13-oRd" firstAttribute="centerY" secondItem="prH-iA-opx" secondAttribute="centerY" id="eir-iO-zcP"/>
+                                                <constraint firstItem="RUs-13-oRd" firstAttribute="centerX" secondItem="prH-iA-opx" secondAttribute="centerX" id="gZS-jC-ziJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="x74-da-LZY" kind="show" id="K44-gN-2Y6">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XPL-uo-erR">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XPL-uo-erR" id="mfb-UG-RFa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin Wheel Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO6-Xc-FCc">
+                                                    <rect key="frame" x="110" y="11.5" width="156" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gO6-Xc-FCc" firstAttribute="centerY" secondItem="mfb-UG-RFa" secondAttribute="centerY" id="AKk-Zf-qdR"/>
+                                                <constraint firstItem="gO6-Xc-FCc" firstAttribute="centerX" secondItem="mfb-UG-RFa" secondAttribute="centerX" id="ksP-uv-nYk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="h1k-0Q-9Kl" kind="show" id="iNL-g4-wNr">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dir-hj-wIv">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dir-hj-wIv" id="mDy-hK-kHy">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic tac toe Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKa-0M-8OM">
+                                                    <rect key="frame" x="113" y="11.5" width="150" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PKa-0M-8OM" firstAttribute="centerY" secondItem="mDy-hK-kHy" secondAttribute="centerY" id="7WG-l8-DMP"/>
+                                                <constraint firstItem="PKa-0M-8OM" firstAttribute="centerX" secondItem="mDy-hK-kHy" secondAttribute="centerX" id="q34-MZ-FN0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="DfQ-r5-Vhc" kind="show" id="LSi-ww-6bm">
+                                                <nil key="action"/>
+                                            </segue>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="XFA-np-N7h" id="m6O-Ed-Pvv"/>
+                            <outlet property="delegate" destination="XFA-np-N7h" id="PIF-nk-IqV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Lnd-2W-h3f"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wsn-vh-6QW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303.19999999999999" y="436.73163418290858"/>
+        </scene>
+        <!--Spin WheelVC-->
+        <scene sceneID="NG6-4D-YKV">
+            <objects>
+                <viewController id="h1k-0Q-9Kl" customClass="SpinWheelVC" customModule="RoadhouseGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Msb-wz-iFZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="tnO-1i-bAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wm8-Hm-VSg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpL-JQ-nY2" customClass="SpinWheelContainer" customModule="RDGameKit">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dpL-JQ-nY2" firstAttribute="leading" secondItem="Wm8-Hm-VSg" secondAttribute="leading" id="529-qH-sPT"/>
+                            <constraint firstItem="dpL-JQ-nY2" firstAttribute="top" secondItem="Msb-wz-iFZ" secondAttribute="bottom" id="QmP-c7-GPk"/>
+                            <constraint firstAttribute="trailing" secondItem="dpL-JQ-nY2" secondAttribute="trailing" id="W8m-S2-Z8c"/>
+                            <constraint firstItem="tnO-1i-bAb" firstAttribute="top" secondItem="dpL-JQ-nY2" secondAttribute="bottom" id="wXy-8S-Gwa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="spinWheelContainer" destination="dpL-JQ-nY2" id="oQp-il-2M8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdd-Mx-sEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="458.32083958020991"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BH5-hw-V1p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mhx-jU-r1g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZXj-fR-Fgv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XFA-np-N7h" kind="relationship" relationship="rootViewController" id="vWJ-fo-kCz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdk-NC-wQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-998" y="437"/>
+        </scene>
+    </scenes>
+</document>
