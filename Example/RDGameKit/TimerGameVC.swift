@@ -10,8 +10,8 @@ import UIKit
 import RDGameKit
 
 class TimerGameVC: UIViewController {
-    @IBOutlet weak var timerGameContainer: TimerGameContainer!
-    @IBOutlet weak var enterBottomConstraint: NSLayoutConstraint!
+    //@IBOutlet weak var timerGameContainer: TimerGameContainer!
+    //@IBOutlet weak var enterBottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()

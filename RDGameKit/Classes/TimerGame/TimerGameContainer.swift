@@ -12,7 +12,7 @@ public protocol TimerGameContainerDelegate {
     func getResult(result: Double)
 }
 
-class TimerGameContainer: UIView {
+public class TimerGameContainer: UIView {
 
     @IBOutlet var contentView: UIView!
 
