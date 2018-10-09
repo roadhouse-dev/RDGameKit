@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mhx-jU-r1g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mhx-jU-r1g">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Scratch ExampleVC-->
         <scene sceneID="M3e-sh-cJZ">
             <objects>
-                <viewController id="x74-da-LZY" customClass="ScratchExampleVC" customModule="RoadhouseGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x74-da-LZY" customClass="ScratchExampleVC" customModule="RDGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="npH-gj-yQh"/>
                         <viewControllerLayoutGuide type="bottom" id="y8G-Hl-mtn"/>
@@ -42,10 +42,53 @@
             </objects>
             <point key="canvasLocation" x="420" y="-209"/>
         </scene>
+        <!--Timer GameVC-->
+        <scene sceneID="1cO-Dx-vJp">
+            <objects>
+                <viewController id="xzJ-DI-gcQ" customClass="TimerGameVC" customModule="RDGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u42-mg-4d3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Otm-c7-iiB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mUf-W0-eps">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUU-Q3-oTO">
+                                <rect key="frame" x="16" y="687" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.42745098040000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yaf-mQ-uYM"/>
+                                </constraints>
+                                <state key="normal" title="ENTER TO WIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQb-k0-dd0" customClass="TimerGameContainer" customModule="GameSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Otm-c7-iiB" firstAttribute="top" secondItem="OUU-Q3-oTO" secondAttribute="bottom" constant="-60" id="0qT-2p-Tos"/>
+                            <constraint firstItem="OUU-Q3-oTO" firstAttribute="trailing" secondItem="mUf-W0-eps" secondAttribute="trailingMargin" id="R10-PB-gxw"/>
+                            <constraint firstItem="tQb-k0-dd0" firstAttribute="top" secondItem="u42-mg-4d3" secondAttribute="bottom" id="c2Q-vB-COK"/>
+                            <constraint firstItem="Otm-c7-iiB" firstAttribute="top" secondItem="tQb-k0-dd0" secondAttribute="bottom" id="ck8-rc-Abr"/>
+                            <constraint firstItem="OUU-Q3-oTO" firstAttribute="leading" secondItem="mUf-W0-eps" secondAttribute="leadingMargin" id="lz0-Fd-nYp"/>
+                            <constraint firstAttribute="trailing" secondItem="tQb-k0-dd0" secondAttribute="trailing" id="w0a-gg-Xat"/>
+                            <constraint firstItem="tQb-k0-dd0" firstAttribute="leading" secondItem="mUf-W0-eps" secondAttribute="leading" id="y52-cd-NSk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VoH-nJ-2qA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271.19999999999999" y="1207.6461769115442"/>
+        </scene>
         <!--Tic Tac ToeVC-->
         <scene sceneID="Tut-ip-MMK">
             <objects>
-                <viewController id="DfQ-r5-Vhc" customClass="TicTacToeVC" customModule="RoadhouseGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DfQ-r5-Vhc" customClass="TicTacToeVC" customModule="RDGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3bt-pU-Q6r"/>
                         <viewControllerLayoutGuide type="bottom" id="sKT-HP-dzx"/>
@@ -73,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nh7-Md-6Xn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="420" y="1200"/>
+            <point key="canvasLocation" x="420" y="1208"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="2Ks-aI-gJl">
@@ -106,9 +149,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="x74-da-LZY" kind="show" id="K44-gN-2Y6">
-                                                <nil key="action"/>
-                                            </segue>
+                                            <segue destination="x74-da-LZY" kind="show" id="K44-gN-2Y6"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="XPL-uo-erR">
@@ -119,7 +160,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin Wheel Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO6-Xc-FCc">
-                                                    <rect key="frame" x="110" y="11.5" width="156" height="21"/>
+                                                    <rect key="frame" x="109.5" y="11.5" width="156" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -131,9 +172,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="h1k-0Q-9Kl" kind="show" id="iNL-g4-wNr">
-                                                <nil key="action"/>
-                                            </segue>
+                                            <segue destination="h1k-0Q-9Kl" kind="show" id="iNL-g4-wNr"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dir-hj-wIv">
@@ -144,7 +183,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic tac toe Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKa-0M-8OM">
-                                                    <rect key="frame" x="113" y="11.5" width="150" height="21"/>
+                                                    <rect key="frame" x="112.5" y="11.5" width="150" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -156,9 +195,30 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="DfQ-r5-Vhc" kind="show" id="LSi-ww-6bm">
-                                                <nil key="action"/>
-                                            </segue>
+                                            <segue destination="DfQ-r5-Vhc" kind="show" id="LSi-ww-6bm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="pBf-Xh-bLg">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pBf-Xh-bLg" id="wXm-Sk-Pha">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Game Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL0-ly-5Yq">
+                                                    <rect key="frame" x="106" y="11.5" width="163" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SL0-ly-5Yq" firstAttribute="centerY" secondItem="wXm-Sk-Pha" secondAttribute="centerY" id="pCV-kr-x1d"/>
+                                                <constraint firstItem="SL0-ly-5Yq" firstAttribute="centerX" secondItem="wXm-Sk-Pha" secondAttribute="centerX" id="yzx-gi-1wh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xzJ-DI-gcQ" kind="show" id="0Ez-nz-eU5"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -178,7 +238,7 @@
         <!--Spin WheelVC-->
         <scene sceneID="NG6-4D-YKV">
             <objects>
-                <viewController id="h1k-0Q-9Kl" customClass="SpinWheelVC" customModule="RoadhouseGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h1k-0Q-9Kl" customClass="SpinWheelVC" customModule="RDGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Msb-wz-iFZ"/>
                         <viewControllerLayoutGuide type="bottom" id="tnO-1i-bAb"/>

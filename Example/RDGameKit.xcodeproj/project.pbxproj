@@ -11,6 +11,7 @@
 		5645064421019DA10049BFB1 /* ScratchExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645064021019DA10049BFB1 /* ScratchExampleVC.swift */; };
 		5645064521019DA10049BFB1 /* TicTacToeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645064121019DA10049BFB1 /* TicTacToeVC.swift */; };
 		5645064621019DA10049BFB1 /* SpinWheelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645064221019DA10049BFB1 /* SpinWheelVC.swift */; };
+		56627392216C52CD008549D6 /* TimerGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56627391216C52CD008549D6 /* TimerGameVC.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -38,6 +39,7 @@
 		5645064021019DA10049BFB1 /* ScratchExampleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchExampleVC.swift; sourceTree = "<group>"; };
 		5645064121019DA10049BFB1 /* TicTacToeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeVC.swift; sourceTree = "<group>"; };
 		5645064221019DA10049BFB1 /* SpinWheelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinWheelVC.swift; sourceTree = "<group>"; };
+		56627391216C52CD008549D6 /* TimerGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerGameVC.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RDGameKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDGameKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				5645064021019DA10049BFB1 /* ScratchExampleVC.swift */,
 				5645064221019DA10049BFB1 /* SpinWheelVC.swift */,
 				5645064121019DA10049BFB1 /* TicTacToeVC.swift */,
+				56627391216C52CD008549D6 /* TimerGameVC.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56627392216C52CD008549D6 /* TimerGameVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				5645064621019DA10049BFB1 /* SpinWheelVC.swift in Sources */,
 				5645064421019DA10049BFB1 /* ScratchExampleVC.swift in Sources */,
