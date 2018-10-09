@@ -28,7 +28,7 @@ public class TimerGameContainer: UIView {
     var time: Double = 0
 
     //convar targetSeconds = 100.3
-    var delegate: TimerGameContainerDelegate?
+    public var delegate: TimerGameContainerDelegate?
     
     var currentSeconds = 0
     var counter = 0
@@ -65,7 +65,7 @@ public class TimerGameContainer: UIView {
         return view
     }
     
-    func updateUI(ms:Int) {
+    public func updateUI(ms:Int) {
         let myTimeInterval = TimeInterval(ms.msToSeconds)
         targetTimerLabel.text = myTimeInterval.toReadableString()
     }
