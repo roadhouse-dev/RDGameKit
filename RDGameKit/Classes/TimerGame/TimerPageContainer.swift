@@ -1,9 +1,8 @@
 //
-//  TimerGameVC.swift
-//  GameSample
+//  TimerPageContainer.swift
+//  RDGameKit
 //
-//  Created by Max Ma on 5/10/18.
-//  Copyright © 2018 Roadhouse. All rights reserved.
+//  Created by Max Ma on 10/10/18.
 //
 
 import UIKit
@@ -12,13 +11,13 @@ public protocol TimerGameContainerDelegate {
     func getResult(result: Double)
 }
 
-public class TimerGameContainer: UIView {
-
+public class TimerPageContainer: UIView {
     @IBOutlet var contentView: UIView!
 
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var logoView: UIImageView!
     @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet weak var tapButton: UIButton!
     
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var targetTimerLabel: UILabel!
@@ -26,14 +25,10 @@ public class TimerGameContainer: UIView {
     weak var timer: Timer?
     var startTime: Double = 0
     var time: Double = 0
-
-    //convar targetSeconds = 100.3
     public var delegate: TimerGameContainerDelegate?
     
     var currentSeconds = 0
     var counter = 0
-
-    @IBOutlet weak var tapButton: UIButton!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -45,12 +40,6 @@ public class TimerGameContainer: UIView {
         xibSetup()
     }
     
-    public func setUp(backgroundImage: UIImage, logo: UIImage, description: String) {
-        self.logoView.image = logo
-        self.descriptionLabel.text = description
-        self.backgroundImageView.image = backgroundImage
-    }
-    
     func xibSetup() {
         contentView = loadViewFromNib()
         contentView.frame = bounds
@@ -60,20 +49,29 @@ public class TimerGameContainer: UIView {
     
     func loadViewFromNib() -> UIView {
         let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "TimerGameContainer", bundle: bundle)
+        //let bundle = Bundle(for: self.classForCoder())
+        //let bundle = Bundle(for:TimerPageContainer.self)
+
+        let nib = UINib(nibName: "TimerPageContainer", bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
+        
         return view
     }
     
-    public func updateUI(ms:Int) {
-        let myTimeInterval = TimeInterval(ms.msToSeconds)
-        targetTimerLabel.text = myTimeInterval.toReadableString()
+    public func configUI(backgroundImage: UIImage, logo: UIImage, description: String, targetMs:Int) {
+        print("configUI")
+        self.descriptionLabel.text = description
+        self.logoView.image = logo
+        self.backgroundImageView.image = backgroundImage
+        
+        let myTimeInterval = TimeInterval(targetMs.msToSeconds)
+        self.targetTimerLabel.text = myTimeInterval.toReadableString()
     }
-
+    
     @IBAction func runTimer(_ sender: Any) {
         //tapButton.isEnabled = false
         counter += 1
-
+        
         if counter == 2 {
             self.tapButton.isEnabled = false;
             self.tapButton.setTitle("Your time", for: .normal)
@@ -90,7 +88,7 @@ public class TimerGameContainer: UIView {
                                          userInfo: nil,
                                          repeats: true)
         }
- 
+        
     }
     
     @objc func advanceTimer(timer: Timer) {
@@ -107,52 +105,6 @@ public class TimerGameContainer: UIView {
         timerLabel.text = time.toReadableString()
         //print()
     }
-    
-  
-}
-extension Int {
-    var msToSeconds: Double {
-        return Double(self) / 1000
-    }
+
 }
 
-extension TimeInterval {
-    
-    func toReadableString() -> String {
-        
-        // Milliseconds
-        let ms = Int((self.truncatingRemainder(dividingBy: 1)) * 100)
-        // Seconds
-        let s = Int(self) % 60
-        // Minutes
-        let mn = (Int(self) / 60) % 60
-        // Hours
-        let hr = (Int(self) / 3600)
-        
-        var readableStr = ""
-        if hr != 0 {
-            //readableStr += String(format: "%0.2dhr ", hr)
-            //dont deal with hour
-        }
-        
-        if mn != 0 {
-            readableStr += String(format: "%0.2d:", mn)
-        } else {
-            readableStr += "00:"
-        }
-        
-        if s != 0 {
-            readableStr += String(format: "%0.2d:", s)
-        } else {
-            readableStr += "00:"
-        }
-        
-        if ms != 0 {
-            readableStr += String(format: "%0.2d", ms)
-        } else {
-            readableStr += "00"
-        }
-        
-        return readableStr
-}
-}

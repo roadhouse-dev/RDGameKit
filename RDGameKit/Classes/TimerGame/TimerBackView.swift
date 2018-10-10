@@ -7,7 +7,7 @@
 //
 
 @IBDesignable
-class TimerBackView: UIView{
+public class TimerBackView: UIView{
     
     @IBInspectable var borderWidth: CGFloat = 0.0{
         
@@ -18,17 +18,18 @@ class TimerBackView: UIView{
     }
     
     
-//    @IBInspectable var borderColor: UIColor = UIColor.clear {
-//        
-//        didSet {
-//            
-//            self.layer.borderColor = borderColor.cgColor
-//        }
-//    }
+    @IBInspectable var borderColor: UIColor = UIColor.clear {
+        
+        didSet {
+            
+            self.layer.borderColor = borderColor.cgColor
+        }
+    }
     
-    override func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         
         super.prepareForInterfaceBuilder()
+        
     }
     
 }

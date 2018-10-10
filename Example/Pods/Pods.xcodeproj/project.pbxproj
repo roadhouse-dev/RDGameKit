@@ -19,8 +19,10 @@
 		413FE6956DBA8737955D27DDCA7551B3 /* NewellAndSimonStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12309B1BE3F3140BF6D41C49120EF752 /* NewellAndSimonStrategy.swift */; };
 		4B9883B78B396DD5A24D6DDD6179482F /* Pods-RDGameKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB0DCCEF3A74EBE1CEFE93BF8F506D3 /* Pods-RDGameKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		505740CE63210079E1770FB6B20EE84E /* ScratchMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478833F242E1A87A997734A85C102A7 /* ScratchMask.swift */; };
-		5662739D216C619F008549D6 /* TimerBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662739B216C619F008549D6 /* TimerBackView.swift */; };
-		5662739E216C619F008549D6 /* TimerGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662739C216C619F008549D6 /* TimerGameContainer.swift */; };
+		566273A7216C7C4B008549D6 /* TimerBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662739B216C619F008549D6 /* TimerBackView.swift */; };
+		56CFFCC6216D5F8F0008DA70 /* TimerPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFFCC5216D5F8F0008DA70 /* TimerPageContainer.swift */; };
+		56CFFCC8216D5FB60008DA70 /* TimerPageContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 56CFFCC7216D5FA00008DA70 /* TimerPageContainer.xib */; };
+		56CFFCCB216D95FC0008DA70 /* RDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFFCCA216D95FC0008DA70 /* RDExtensions.swift */; };
 		5CD3B5DEE333AC0DD96E13803304A528 /* SpinningWheelAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747EC50921169048E7EFFCF001FB2DB2 /* SpinningWheelAnimator.swift */; };
 		608E26CEE6060451396BC4102ED62189 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		6236A1A3AAC75ECFC1439833021D7B23 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE2B8C9E076C3B1A3C1EB13DCEE771 /* Game.swift */; };
@@ -81,9 +83,10 @@
 		3AC15899C6FB0C453717AF7209F79084 /* GameBoard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		4972B51ACA59970675DF516354E10CE2 /* Pods_RDGameKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDGameKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E5B5A2E8F30B56394DD718F9470305 /* RDGameKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = RDGameKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5662739A216C619F008549D6 /* TimerGameContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerGameContainer.xib; sourceTree = "<group>"; };
 		5662739B216C619F008549D6 /* TimerBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerBackView.swift; sourceTree = "<group>"; };
-		5662739C216C619F008549D6 /* TimerGameContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerGameContainer.swift; sourceTree = "<group>"; };
+		56CFFCC5216D5F8F0008DA70 /* TimerPageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPageContainer.swift; sourceTree = "<group>"; };
+		56CFFCC7216D5FA00008DA70 /* TimerPageContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerPageContainer.xib; sourceTree = "<group>"; };
+		56CFFCCA216D95FC0008DA70 /* RDExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDExtensions.swift; sourceTree = "<group>"; };
 		57A0BE171B8A1764941385E94BC335B5 /* Pods-RDGameKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RDGameKit_Tests.modulemap"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		615FABA8636A16761CB054FC4C46A7E2 /* Pods-RDGameKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RDGameKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -210,9 +213,10 @@
 		56627399216C619F008549D6 /* TimerGame */ = {
 			isa = PBXGroup;
 			children = (
-				5662739A216C619F008549D6 /* TimerGameContainer.xib */,
+				56CFFCCA216D95FC0008DA70 /* RDExtensions.swift */,
 				5662739B216C619F008549D6 /* TimerBackView.swift */,
-				5662739C216C619F008549D6 /* TimerGameContainer.swift */,
+				56CFFCC5216D5F8F0008DA70 /* TimerPageContainer.swift */,
+				56CFFCC7216D5FA00008DA70 /* TimerPageContainer.xib */,
 			);
 			name = TimerGame;
 			path = RDGameKit/Classes/TimerGame;
@@ -459,8 +463,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56CFFCC8216D5FB60008DA70 /* TimerPageContainer.xib in Sources */,
 				AFF3060B2748C27AC2B177886F64C948 /* BoardAppearance.swift in Sources */,
-				5662739D216C619F008549D6 /* TimerBackView.swift in Sources */,
 				6236A1A3AAC75ECFC1439833021D7B23 /* Game.swift in Sources */,
 				F65F583CC044AD2ACF6371B6A30D8118 /* GameBoard.swift in Sources */,
 				C8CA7D3F55407693DFF70A42E2319A10 /* GameBoardLayout.swift in Sources */,
@@ -468,7 +472,7 @@
 				09726FD5430940D2F1A49DF891C5F5CE /* GameBoardView.swift in Sources */,
 				413FE6956DBA8737955D27DDCA7551B3 /* NewellAndSimonStrategy.swift in Sources */,
 				0ACBF5678ABB24875FBC5AE8234DC378 /* OutcomeAnalyst.swift in Sources */,
-				5662739E216C619F008549D6 /* TimerGameContainer.swift in Sources */,
+				56CFFCCB216D95FC0008DA70 /* RDExtensions.swift in Sources */,
 				F982B4C9855ABC4D9D0D07D3FC7C3142 /* RandomTactic.swift in Sources */,
 				3F94B56B6B07380049E553D59FE95100 /* RDGameKit-dummy.m in Sources */,
 				76E665E1437999D2F73C926079C2DDF0 /* ScratchCard.swift in Sources */,
@@ -480,6 +484,8 @@
 				EBAD01701D94D6C3114B5F44C2DB78E3 /* SpinWheelContainer.swift in Sources */,
 				1F905627FEAE05CFC68E84A3B4A938B3 /* SpinWheelContainer.xib in Sources */,
 				2C95F2C1E8E2D75B3F3694757D83B64E /* SpinWheelLayer.swift in Sources */,
+				566273A7216C7C4B008549D6 /* TimerBackView.swift in Sources */,
+				56CFFCC6216D5F8F0008DA70 /* TimerPageContainer.swift in Sources */,
 				80CEEB6CD006F5F126564D02D200B9EB /* SpinWheelSlice.swift in Sources */,
 				F615FC00B7756827ACD9475A2F3532CB /* SpinWheelSliceProtocol.swift in Sources */,
 				633D7825BEF1C42A1FEBE9CBBBCEE396 /* Tactics.swift in Sources */,

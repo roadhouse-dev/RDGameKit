@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpinWheelContainer" customModule="RoadhouseGameKit">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SpinWheelContainer" customModule="RDGameKit">
             <connections>
                 <outlet property="backgroundImageView" destination="asl-VV-yFq" id="K0J-62-hPA"/>
                 <outlet property="bottomLogoImageView" destination="ulo-Bj-NcP" id="0qr-lo-qUI"/>
@@ -41,14 +40,14 @@
                     </constraints>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PZR-qa-3r2">
-                    <rect key="frame" x="3" y="141" width="369" height="386"/>
+                    <rect key="frame" x="3" y="140.5" width="369" height="386"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="369" id="3hD-Fp-8Qq"/>
                         <constraint firstAttribute="width" secondItem="PZR-qa-3r2" secondAttribute="height" multiplier="369:386" id="p01-OU-Ffo"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q40-5k-kFS">
-                    <rect key="frame" x="137" y="313" width="101" height="36"/>
+                    <rect key="frame" x="137" y="312.5" width="101" height="36"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="101" id="t6h-Nc-Sli"/>
                     </constraints>
@@ -69,14 +68,14 @@
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ulo-Bj-NcP">
-                    <rect key="frame" x="67" y="529" width="240" height="128"/>
+                    <rect key="frame" x="67.5" y="529" width="240" height="128"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="xvu-wZ-4h4"/>
                         <constraint firstAttribute="height" constant="128" id="zNy-xA-eYQ"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LM7-NJ-3wi">
-                    <rect key="frame" x="42" y="677" width="290" height="130"/>
+                    <rect key="frame" x="42.5" y="677" width="290" height="130"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJv-Uv-iAc">
                             <rect key="frame" x="0.0" y="20" width="290" height="110"/>
