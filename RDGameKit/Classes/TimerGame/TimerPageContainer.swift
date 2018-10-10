@@ -15,7 +15,6 @@ public class TimerPageContainer: UIView {
     @IBOutlet var contentView: UIView!
 
     @IBOutlet var backgroundImageView: UIImageView!
-    @IBOutlet var logoView: UIImageView!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet weak var tapButton: UIButton!
     
@@ -58,10 +57,9 @@ public class TimerPageContainer: UIView {
         return view
     }
     
-    public func configUI(backgroundImage: UIImage, logo: UIImage, description: String, targetMs:Int) {
+    public func configUI(backgroundImage: UIImage, description: String, targetMs:Int) {
         print("configUI")
         self.descriptionLabel.text = description
-        self.logoView.image = logo
         self.backgroundImageView.image = backgroundImage
         
         let myTimeInterval = TimeInterval(targetMs.msToSeconds)
@@ -107,4 +105,3 @@ public class TimerPageContainer: UIView {
     }
 
 }
-

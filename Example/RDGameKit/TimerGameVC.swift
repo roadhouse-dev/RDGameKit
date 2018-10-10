@@ -17,7 +17,7 @@ class TimerGameVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
-        self.timerPageContainer.configUI(backgroundImage: #imageLiteral(resourceName: "background"), logo: #imageLiteral(resourceName: "logo"), description: "Match Usain Bolts record breaking time to go onto the leaderboard.\n\nThe top 5 closest times at the end of the month will win a $ 100 gift voucher.", targetMs: 12000)
+        self.timerPageContainer.configUI(backgroundImage: #imageLiteral(resourceName: "background"), description: "Match Usain Bolts record breaking time to go onto the leaderboard.\n\nThe top 5 closest times at the end of the month will win a $ 100 gift voucher.", targetMs: 12000)
         self.timerPageContainer.delegate = self
     }
     

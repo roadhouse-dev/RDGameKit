@@ -14,7 +14,6 @@
                 <outlet property="backgroundImageView" destination="P73-s8-5jT" id="dJ0-an-XyH"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="pNm-y9-jjY"/>
                 <outlet property="descriptionLabel" destination="mdG-1i-wte" id="3fK-lq-T8r"/>
-                <outlet property="logoView" destination="XcY-b7-X7v" id="j0p-YB-O9H"/>
                 <outlet property="tapButton" destination="gJs-aJ-Xmo" id="j7i-2B-AVh"/>
                 <outlet property="targetTimerLabel" destination="BBQ-Yf-AC1" id="FeL-zW-acB"/>
                 <outlet property="timerLabel" destination="wqz-h7-ki2" id="kfI-Do-NE3"/>
@@ -29,7 +28,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UEb-da-HZ7">
-                    <rect key="frame" x="47.5" y="279.5" width="280" height="244"/>
+                    <rect key="frame" x="47.5" y="258" width="280" height="244"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJs-aJ-Xmo">
                             <rect key="frame" x="76.5" y="0.0" width="127" height="33"/>
@@ -101,20 +100,40 @@
                         </view>
                     </subviews>
                 </stackView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XcY-b7-X7v">
-                    <rect key="frame" x="51.5" y="38" width="272" height="100"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="272" id="8j0-Xz-piM"/>
-                        <constraint firstAttribute="height" constant="100" id="vvJ-az-yr1"/>
-                    </constraints>
-                </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdG-1i-wte">
-                    <rect key="frame" x="16" y="146" width="343" height="101.5"/>
+                    <rect key="frame" x="16" y="124.5" width="343" height="101.5"/>
                     <string key="text">Match Usain Bolts record breaking time to go onto the leaderboard.
 
 The top 5 closest times at the end of the month will win a $ 100 gift voucher.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkW-ik-yz1">
+                    <rect key="frame" x="45" y="48" width="285" height="60.5"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Match">
+                            <attributes>
+                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="54" name="Arial-BoldMT"/>
+                                <font key="NSOriginalFont" size="54" name="Arial-BoldMT"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="2">
+                            <attributes>
+                                <color key="NSColor" red="0.52549019607843139" green="0.73333333333333328" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="54" name="Arial-BoldMT"/>
+                                <font key="NSOriginalFont" size="54" name="Arial-BoldMT"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="Win">
+                            <attributes>
+                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="54" name="Arial-BoldMT"/>
+                                <font key="NSOriginalFont" size="54" name="Arial-BoldMT"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -123,14 +142,14 @@ The top 5 closest times at the end of the month will win a $ 100 gift voucher.</
                 <constraint firstItem="P73-s8-5jT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="03X-NV-Kw9"/>
                 <constraint firstItem="P73-s8-5jT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3id-6v-GpE"/>
                 <constraint firstItem="mdG-1i-wte" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="5By-9g-V6Q"/>
-                <constraint firstItem="XcY-b7-X7v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="38" id="91g-XQ-W0c"/>
+                <constraint firstItem="vkW-ik-yz1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="A5z-s5-Au5"/>
                 <constraint firstItem="UEb-da-HZ7" firstAttribute="top" secondItem="mdG-1i-wte" secondAttribute="bottom" constant="32" id="APt-rL-1e1"/>
                 <constraint firstAttribute="trailing" secondItem="mdG-1i-wte" secondAttribute="trailing" constant="16" id="O8a-78-XzM"/>
-                <constraint firstItem="XcY-b7-X7v" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OlL-zi-H1e"/>
+                <constraint firstItem="mdG-1i-wte" firstAttribute="top" secondItem="vkW-ik-yz1" secondAttribute="bottom" constant="16" id="Uka-P6-e9s"/>
                 <constraint firstAttribute="trailing" secondItem="P73-s8-5jT" secondAttribute="trailing" id="Um0-gF-e9C"/>
                 <constraint firstAttribute="bottom" secondItem="P73-s8-5jT" secondAttribute="bottom" id="VrB-Mk-Ew0"/>
+                <constraint firstItem="vkW-ik-yz1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="48" id="bsz-2G-IJf"/>
                 <constraint firstItem="UEb-da-HZ7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="f8y-Xa-cgS"/>
-                <constraint firstItem="mdG-1i-wte" firstAttribute="top" secondItem="XcY-b7-X7v" secondAttribute="bottom" constant="8" id="kUF-cR-hCP"/>
             </constraints>
         </view>
     </objects>
