@@ -29,6 +29,9 @@ public class TimerPageContainer: UIView {
     var currentSeconds = 0
     var counter = 0
     
+    @IBOutlet weak var tapAreaButton: UIButton!
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
@@ -67,13 +70,12 @@ public class TimerPageContainer: UIView {
     }
     
     @IBAction func runTimer(_ sender: Any) {
-        //tapButton.isEnabled = false
         counter += 1
         
         if counter == 2 {
-            self.tapButton.isEnabled = false;
             self.tapButton.setTitle("Your time", for: .normal)
             //update enter button
+            self.tapAreaButton.isEnabled = false
             timer?.invalidate()
             
             delegate?.getResult(result: time)
