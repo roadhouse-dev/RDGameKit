@@ -19,6 +19,15 @@
 		413FE6956DBA8737955D27DDCA7551B3 /* NewellAndSimonStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12309B1BE3F3140BF6D41C49120EF752 /* NewellAndSimonStrategy.swift */; };
 		4B9883B78B396DD5A24D6DDD6179482F /* Pods-RDGameKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB0DCCEF3A74EBE1CEFE93BF8F506D3 /* Pods-RDGameKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		505740CE63210079E1770FB6B20EE84E /* ScratchMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478833F242E1A87A997734A85C102A7 /* ScratchMask.swift */; };
+		560A1D9C217409F9005FFC8C /* RacingGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560A1D9A217409F9005FFC8C /* RacingGameContainer.swift */; };
+		560A1D9D21740AA0005FFC8C /* RacingGameContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 560A1D9B217409F9005FFC8C /* RacingGameContainer.xib */; };
+		560A1D9F21741667005FFC8C /* coffe_cup.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1D9E21741571005FFC8C /* coffe_cup.png */; };
+		560A1DA1217452C4005FFC8C /* usainbolt_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA0217452BE005FFC8C /* usainbolt_marker.png */; };
+		560A1DA3217454A0005FFC8C /* ic_challenter_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA221745496005FFC8C /* ic_challenter_marker.png */; };
+		560A1DA621745D7E005FFC8C /* ic_right_foot.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA521745D6A005FFC8C /* ic_right_foot.png */; };
+		560A1DA721745D7E005FFC8C /* ic_left_foot.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA421745B44005FFC8C /* ic_left_foot.png */; };
+		560A1DA92174616B005FFC8C /* ic_left_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA821746164005FFC8C /* ic_left_foot_hl.png */; };
+		560A1DAB217462A0005FFC8C /* ic_right_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DAA21746297005FFC8C /* ic_right_foot_hl.png */; };
 		566273A7216C7C4B008549D6 /* TimerBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662739B216C619F008549D6 /* TimerBackView.swift */; };
 		56CFFCC6216D5F8F0008DA70 /* TimerPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFFCC5216D5F8F0008DA70 /* TimerPageContainer.swift */; };
 		56CFFCC8216D5FB60008DA70 /* TimerPageContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 56CFFCC7216D5FA00008DA70 /* TimerPageContainer.xib */; };
@@ -83,6 +92,15 @@
 		3AC15899C6FB0C453717AF7209F79084 /* GameBoard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
 		4972B51ACA59970675DF516354E10CE2 /* Pods_RDGameKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDGameKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52E5B5A2E8F30B56394DD718F9470305 /* RDGameKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = RDGameKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		560A1D9A217409F9005FFC8C /* RacingGameContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RacingGameContainer.swift; sourceTree = "<group>"; };
+		560A1D9B217409F9005FFC8C /* RacingGameContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RacingGameContainer.xib; sourceTree = "<group>"; };
+		560A1D9E21741571005FFC8C /* coffe_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coffe_cup.png; path = ../../../Example/RDGameKit/Images.xcassets/coffe_cup.imageset/coffe_cup.png; sourceTree = "<group>"; };
+		560A1DA0217452BE005FFC8C /* usainbolt_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usainbolt_marker.png; sourceTree = "<group>"; };
+		560A1DA221745496005FFC8C /* ic_challenter_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_challenter_marker.png; sourceTree = "<group>"; };
+		560A1DA421745B44005FFC8C /* ic_left_foot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_left_foot.png; sourceTree = "<group>"; };
+		560A1DA521745D6A005FFC8C /* ic_right_foot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_right_foot.png; sourceTree = "<group>"; };
+		560A1DA821746164005FFC8C /* ic_left_foot_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_left_foot_hl.png; sourceTree = "<group>"; };
+		560A1DAA21746297005FFC8C /* ic_right_foot_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_right_foot_hl.png; sourceTree = "<group>"; };
 		5662739B216C619F008549D6 /* TimerBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerBackView.swift; sourceTree = "<group>"; };
 		56CFFCC5216D5F8F0008DA70 /* TimerPageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPageContainer.swift; sourceTree = "<group>"; };
 		56CFFCC7216D5FA00008DA70 /* TimerPageContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerPageContainer.xib; sourceTree = "<group>"; };
@@ -181,6 +199,7 @@
 		298EB1AA72F8A5499E071101A0A5F203 /* RDGameKit */ = {
 			isa = PBXGroup;
 			children = (
+				560A1D99217409F9005FFC8C /* RacingGame */,
 				56627399216C619F008549D6 /* TimerGame */,
 				69DC29CCE8A28B038BC3128AE3A8FAB8 /* Pod */,
 				2342D449F1C7C7DAC5954320D07B53E7 /* ScratchCard */,
@@ -208,6 +227,23 @@
 			);
 			name = "Pods-RDGameKit_Example";
 			path = "Target Support Files/Pods-RDGameKit_Example";
+			sourceTree = "<group>";
+		};
+		560A1D99217409F9005FFC8C /* RacingGame */ = {
+			isa = PBXGroup;
+			children = (
+				560A1DAA21746297005FFC8C /* ic_right_foot_hl.png */,
+				560A1DA821746164005FFC8C /* ic_left_foot_hl.png */,
+				560A1DA521745D6A005FFC8C /* ic_right_foot.png */,
+				560A1DA421745B44005FFC8C /* ic_left_foot.png */,
+				560A1D9E21741571005FFC8C /* coffe_cup.png */,
+				560A1DA0217452BE005FFC8C /* usainbolt_marker.png */,
+				560A1DA221745496005FFC8C /* ic_challenter_marker.png */,
+				560A1D9A217409F9005FFC8C /* RacingGameContainer.swift */,
+				560A1D9B217409F9005FFC8C /* RacingGameContainer.xib */,
+			);
+			name = RacingGame;
+			path = RDGameKit/Classes/RacingGame;
 			sourceTree = "<group>";
 		};
 		56627399216C619F008549D6 /* TimerGame */ = {
@@ -463,6 +499,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560A1DAB217462A0005FFC8C /* ic_right_foot_hl.png in Sources */,
+				560A1DA92174616B005FFC8C /* ic_left_foot_hl.png in Sources */,
+				560A1DA621745D7E005FFC8C /* ic_right_foot.png in Sources */,
+				560A1DA721745D7E005FFC8C /* ic_left_foot.png in Sources */,
+				560A1DA3217454A0005FFC8C /* ic_challenter_marker.png in Sources */,
+				560A1DA1217452C4005FFC8C /* usainbolt_marker.png in Sources */,
+				560A1D9F21741667005FFC8C /* coffe_cup.png in Sources */,
+				560A1D9D21740AA0005FFC8C /* RacingGameContainer.xib in Sources */,
 				56CFFCC8216D5FB60008DA70 /* TimerPageContainer.xib in Sources */,
 				AFF3060B2748C27AC2B177886F64C948 /* BoardAppearance.swift in Sources */,
 				6236A1A3AAC75ECFC1439833021D7B23 /* Game.swift in Sources */,
@@ -473,6 +517,7 @@
 				413FE6956DBA8737955D27DDCA7551B3 /* NewellAndSimonStrategy.swift in Sources */,
 				0ACBF5678ABB24875FBC5AE8234DC378 /* OutcomeAnalyst.swift in Sources */,
 				56CFFCCB216D95FC0008DA70 /* RDExtensions.swift in Sources */,
+				560A1D9C217409F9005FFC8C /* RacingGameContainer.swift in Sources */,
 				F982B4C9855ABC4D9D0D07D3FC7C3142 /* RandomTactic.swift in Sources */,
 				3F94B56B6B07380049E553D59FE95100 /* RDGameKit-dummy.m in Sources */,
 				76E665E1437999D2F73C926079C2DDF0 /* ScratchCard.swift in Sources */,

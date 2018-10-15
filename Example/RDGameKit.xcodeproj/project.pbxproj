@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560A1D9821740583005FFC8C /* RacingGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560A1D9721740582005FFC8C /* RacingGameVC.swift */; };
 		5645064321019DA10049BFB1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645063F21019DA10049BFB1 /* Utils.swift */; };
 		5645064421019DA10049BFB1 /* ScratchExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645064021019DA10049BFB1 /* ScratchExampleVC.swift */; };
 		5645064521019DA10049BFB1 /* TicTacToeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645064121019DA10049BFB1 /* TicTacToeVC.swift */; };
@@ -35,6 +36,7 @@
 		0888029FF9529E0B62406B51 /* Pods_RDGameKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDGameKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15479D7B766D1F77591A6030 /* Pods-RDGameKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDGameKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RDGameKit_Tests/Pods-RDGameKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4518E5729BB3D330406B1932 /* Pods_RDGameKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDGameKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		560A1D9721740582005FFC8C /* RacingGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacingGameVC.swift; sourceTree = "<group>"; };
 		5645063F21019DA10049BFB1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5645064021019DA10049BFB1 /* ScratchExampleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchExampleVC.swift; sourceTree = "<group>"; };
 		5645064121019DA10049BFB1 /* TicTacToeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeVC.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				5645064221019DA10049BFB1 /* SpinWheelVC.swift */,
 				5645064121019DA10049BFB1 /* TicTacToeVC.swift */,
 				56627391216C52CD008549D6 /* TimerGameVC.swift */,
+				560A1D9721740582005FFC8C /* RacingGameVC.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -219,7 +222,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56627392216C52CD008549D6 /* TimerGameVC.swift in Sources */,
+				560A1D9821740583005FFC8C /* RacingGameVC.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				5645064621019DA10049BFB1 /* SpinWheelVC.swift in Sources */,
 				5645064421019DA10049BFB1 /* ScratchExampleVC.swift in Sources */,
@@ -393,12 +397,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -446,12 +452,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

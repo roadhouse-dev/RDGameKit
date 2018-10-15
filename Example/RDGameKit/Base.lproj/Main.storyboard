@@ -42,6 +42,39 @@
             </objects>
             <point key="canvasLocation" x="420" y="-209"/>
         </scene>
+        <!--Racing GameVC-->
+        <scene sceneID="nzl-5B-Kck">
+            <objects>
+                <viewController id="LPU-Gg-4ZU" customClass="RacingGameVC" customModule="RDGameKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cl7-pg-vq5"/>
+                        <viewControllerLayoutGuide type="bottom" id="ifr-iW-HHD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CfH-9c-bgu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-hl-2EM" customClass="RacingGameContainer" customModule="RDGameKit">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ifr-iW-HHD" firstAttribute="top" secondItem="IQa-hl-2EM" secondAttribute="bottom" id="RCt-Np-zHa"/>
+                            <constraint firstAttribute="trailing" secondItem="IQa-hl-2EM" secondAttribute="trailing" id="osS-ck-1eS"/>
+                            <constraint firstItem="IQa-hl-2EM" firstAttribute="top" secondItem="cl7-pg-vq5" secondAttribute="bottom" id="tiL-WQ-Aqx"/>
+                            <constraint firstItem="IQa-hl-2EM" firstAttribute="leading" secondItem="CfH-9c-bgu" secondAttribute="leading" id="umS-r6-0lk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="racingGameContainer" destination="IQa-hl-2EM" id="ana-lo-AQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4g-pr-XW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303" y="1208"/>
+        </scene>
         <!--Timer GameVC-->
         <scene sceneID="1cO-Dx-vJp">
             <objects>
@@ -86,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VoH-nJ-2qA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-348" y="1208"/>
+            <point key="canvasLocation" x="420" y="1934"/>
         </scene>
         <!--Tic Tac ToeVC-->
         <scene sceneID="Tut-ip-MMK">
@@ -222,6 +255,29 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="xzJ-DI-gcQ" kind="show" id="0Ez-nz-eU5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="dQn-ic-u15">
+                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dQn-ic-u15" id="vGw-vn-VbX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Racing Game Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKd-Of-yup">
+                                                    <rect key="frame" x="102" y="11.5" width="171" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IKd-Of-yup" firstAttribute="centerX" secondItem="vGw-vn-VbX" secondAttribute="centerX" id="EJf-2j-GnZ"/>
+                                                <constraint firstItem="IKd-Of-yup" firstAttribute="centerY" secondItem="vGw-vn-VbX" secondAttribute="centerY" id="MAR-OE-Hh7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="LPU-Gg-4ZU" kind="show" id="VwA-ev-uf2"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
