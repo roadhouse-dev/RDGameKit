@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RacingGameContainer" customModule="RDGameKit" customModuleProvider="target">
             <connections>
-                <outlet property="backgroundImageView" destination="cv9-lc-csv" id="vef-2o-VTi"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="wHd-gg-Y1C"/>
                 <outlet property="controlArea" destination="gsl-SF-ibk" id="Zb5-th-NLf"/>
                 <outlet property="countDownView" destination="qBM-sv-hNd" id="hxS-II-gcg"/>
@@ -31,9 +30,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cv9-lc-csv">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="28V-6S-8Ze">
                     <rect key="frame" x="16" y="16" width="382" height="139"/>
                     <subviews>
@@ -369,10 +365,7 @@
                 <constraint firstAttribute="bottom" secondItem="214-jI-Xgo" secondAttribute="bottom" id="FaZ-6f-aAm"/>
                 <constraint firstItem="BMC-zi-8xx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="28V-6S-8Ze" secondAttribute="bottom" constant="16" id="NeT-G2-XIe"/>
                 <constraint firstAttribute="bottom" secondItem="gsl-SF-ibk" secondAttribute="bottom" id="Nht-bJ-y0k"/>
-                <constraint firstItem="cv9-lc-csv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OtM-oI-uB4"/>
-                <constraint firstItem="cv9-lc-csv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RoC-Ax-3FZ"/>
                 <constraint firstItem="214-jI-Xgo" firstAttribute="top" secondItem="BMC-zi-8xx" secondAttribute="bottom" constant="32" id="Tbz-y6-Bh6"/>
-                <constraint firstItem="cv9-lc-csv" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="UOX-dY-2uP"/>
                 <constraint firstItem="BMC-zi-8xx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WbS-a5-Csn"/>
                 <constraint firstItem="214-jI-Xgo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="b9S-oo-br3"/>
                 <constraint firstItem="gsl-SF-ibk" firstAttribute="top" secondItem="BMC-zi-8xx" secondAttribute="bottom" constant="32" id="cKt-9a-dOX"/>
@@ -384,7 +377,6 @@
                 <constraint firstItem="BMC-zi-8xx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="16" id="o1F-Vs-krq"/>
                 <constraint firstItem="gsl-SF-ibk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tZN-2C-edf"/>
                 <constraint firstItem="BMC-zi-8xx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xzO-a1-1f8"/>
-                <constraint firstItem="cv9-lc-csv" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="yhz-Om-5Ql"/>
             </constraints>
             <point key="canvasLocation" x="52.173913043478265" y="48.097826086956523"/>
         </view>

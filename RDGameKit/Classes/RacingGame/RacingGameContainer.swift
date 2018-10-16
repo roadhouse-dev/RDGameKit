@@ -18,7 +18,6 @@ public class RacingGameContainer: UIView {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     var descriptionText = ""
-    @IBOutlet weak var backgroundImageView: UIImageView!
     
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
     @IBOutlet weak var secondLeadingConstraint: NSLayoutConstraint!
@@ -78,11 +77,10 @@ public class RacingGameContainer: UIView {
         return view
     }
     
-    public func configUI(backgroundImage: UIImage, description: String, boltTime: TimeInterval, steps: Int) {
+    public func configUI(description: String, boltTime: TimeInterval, steps: Int) {
         print("configUI")
         self.descriptionText = description
         self.descriptionLabel.text = description
-        self.backgroundImageView.image = backgroundImage
         self.resultLabel.text = ""
         self.boltTime = boltTime
         self.steps = steps
