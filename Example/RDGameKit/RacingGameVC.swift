@@ -15,7 +15,8 @@ class RacingGameVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.racingGameContainer.configUI(backgroundImage: #imageLiteral(resourceName: "background"), description: "Race Usain Bolts record breaking time to win.\n\nThe top 5 fastest at the end of month will win a $100 gift voucher.")
+        self.racingGameContainer.configUI(backgroundImage: #imageLiteral(resourceName: "background"), description: "Race Usain Bolts record breaking time to win.\n\nThe top 5 fastest at the end of month will win a $100 gift voucher.", boltTime: TimeInterval(8.8), steps: 10)
+        self.racingGameContainer.delegate = self
     }
     
 
@@ -29,4 +30,11 @@ class RacingGameVC: UIViewController {
     }
     */
 
+}
+extension RacingGameVC: RacingGameContainerDelegate {
+    func entryButtonClicked(playerTime: TimeInterval, boltTime: TimeInterval) {
+        print("playerTime: \(playerTime) boltTime: \(boltTime)")
+    }
+    
+    
 }

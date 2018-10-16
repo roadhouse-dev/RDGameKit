@@ -7,12 +7,17 @@
 
 import UIKit
 
+public protocol RacingGameContainerDelegate {
+    func entryButtonClicked(playerTime: TimeInterval, boltTime: TimeInterval)
+}
+
 public class RacingGameContainer: UIView {
     @IBOutlet var contentView: UIView!
     
     
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    var descriptionText = ""
     @IBOutlet weak var backgroundImageView: UIImageView!
     
     @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
@@ -38,10 +43,14 @@ public class RacingGameContainer: UIView {
     
     var steps = 10
     var currentStep = 0
-    var firstPlayerDuration: CGFloat = 4.0
+    var boltTime: TimeInterval = TimeInterval(1)
+    var playerTime: TimeInterval = TimeInterval(0)
+    
+    var playerStartUpTime: Int?
+    var playerEndUpTime: Int?
 
-    var playerStartTime: TimeInterval?
-    var playerEndTime: TimeInterval?
+    var numbersFinished = 0
+    public var delegate: RacingGameContainerDelegate?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -69,11 +78,14 @@ public class RacingGameContainer: UIView {
         return view
     }
     
-    public func configUI(backgroundImage: UIImage, description: String) {
+    public func configUI(backgroundImage: UIImage, description: String, boltTime: TimeInterval, steps: Int) {
         print("configUI")
+        self.descriptionText = description
         self.descriptionLabel.text = description
         self.backgroundImageView.image = backgroundImage
         self.resultLabel.text = ""
+        self.boltTime = boltTime
+        self.steps = steps
     }
     
 
@@ -113,6 +125,13 @@ public class RacingGameContainer: UIView {
         self.entryArea.isHidden = true
         self.countDownView.isHidden = false
         self.countDownSeconds = 3
+        
+        self.playerStartUpTime = nil
+        self.playerEndUpTime = nil
+        
+        self.descriptionLabel.text = self.descriptionText
+        self.resultLabel.text = ""
+        
         startGameTimer()
     }
     
@@ -124,7 +143,7 @@ public class RacingGameContainer: UIView {
     }
     
     @IBAction func enterToWin(_ sender: Any) {
-        
+        self.delegate?.entryButtonClicked(playerTime: self.playerTime, boltTime: self.boltTime)
     }
     
     
@@ -142,21 +161,32 @@ public class RacingGameContainer: UIView {
     }
     
     @objc func runFirstPlayer() {
-        self.trackWidth = firstTrackView.frame.width - 80
+        if playerStartUpTime == nil {
+            playerStartUpTime = self.upTime()
+        }
+        
+        self.trackWidth = firstTrackView.frame.width - 84
         
         self.leadingConstraint.constant = self.trackWidth
-        UIView.animate(withDuration:TimeInterval(firstPlayerDuration)) {
+        print("runFirstPlayer s uptime: \(upTime())")
+
+//        UIView.animate(withDuration: boltTime) {
+//            self.layoutIfNeeded()
+//            self.checkGameEnd()
+//        }
+        
+        UIView.animate(withDuration: boltTime, animations: {
             self.layoutIfNeeded()
+        }) { (isCompleted) in
+            print("runFirstPlayer isCompleted: \(isCompleted)")
+            self.checkGameEnd()
         }
     }
     
     private func moveSecondUser() {
-        if playerStartTime == nil {
-            playerStartTime = Date().timeIntervalSinceReferenceDate
-        }
-       
+   
 
-        self.trackWidth = firstTrackView.frame.width - 80
+        self.trackWidth = firstTrackView.frame.width - 84
         
         let stepLength = (self.trackWidth + 18)/CGFloat(steps)
         
@@ -168,21 +198,66 @@ public class RacingGameContainer: UIView {
             self.layoutIfNeeded()
 
             if self.currentStep >= self.steps {
-                self.playerEndTime = Date().timeIntervalSinceReferenceDate
+                self.playerEndUpTime = self.upTime()
+                
                 self.controlArea.isHidden = true
                 self.entryArea.isHidden = false
-                self.updateResult()
+                self.checkGameEnd()
             }
         }
     }
     
+    func checkGameEnd() {
+        numbersFinished += 1
+        
+        if numbersFinished == 2 {
+            self.updateResult()
+            self.numbersFinished = 0
+        }
+        print("runFirstPlayer e uptime: \(upTime())")
+        print("checkGameEnd")
+    }
+    
     func updateResult() {
-        guard let startTime = playerStartTime, let endTime = playerEndTime else {
+
+        guard let startTime = playerStartUpTime, let endTime = playerEndUpTime else {
             return
         }
-        
+
         let time = endTime - startTime
-        self.resultLabel.text = time.toReadableString()
+        self.playerTime = TimeInterval(Double(time)/1000.0)
+        print("s - e time: \(playerTime)")
+        
+        if self.playerTime < boltTime {
+            self.descriptionLabel.text = "Congradulations, you beat Usain Bolts record."
+        } else {
+            self.descriptionLabel.text = "You didn't beat Usain Bolt this time."
+        }
+
+        self.resultLabel.text = "Your Time: \(self.playerTime.toReadableStringThreeD())"
+    }
+    
+    public func upTime() -> Int {
+        var bootTime = timeval()
+        var currentTime = timeval()
+        var timeZone = timezone()
+        
+        let mib = UnsafeMutablePointer<Int32>.allocate(capacity: 2)
+        mib[0] = CTL_KERN
+        mib[1] = KERN_BOOTTIME
+        var size = MemoryLayout.size(ofValue: bootTime)
+        
+        var timeSinceBoot = 0.0
+        
+        gettimeofday(&currentTime, &timeZone)
+        
+        if sysctl(mib, 2, &bootTime, &size, nil, 0) != -1 && bootTime.tv_sec != 0 {
+            timeSinceBoot = Double(currentTime.tv_sec - bootTime.tv_sec)
+            timeSinceBoot += Double(currentTime.tv_usec - bootTime.tv_usec) / 1000000.0
+        }
+        let milliseconds = Int(timeSinceBoot * 1000)
+        
+        return milliseconds
     }
     
 }

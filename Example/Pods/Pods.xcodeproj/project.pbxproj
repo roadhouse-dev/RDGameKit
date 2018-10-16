@@ -22,12 +22,12 @@
 		560A1D9C217409F9005FFC8C /* RacingGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560A1D9A217409F9005FFC8C /* RacingGameContainer.swift */; };
 		560A1D9D21740AA0005FFC8C /* RacingGameContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 560A1D9B217409F9005FFC8C /* RacingGameContainer.xib */; };
 		560A1D9F21741667005FFC8C /* coffe_cup.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1D9E21741571005FFC8C /* coffe_cup.png */; };
-		560A1DA1217452C4005FFC8C /* usainbolt_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA0217452BE005FFC8C /* usainbolt_marker.png */; };
-		560A1DA3217454A0005FFC8C /* ic_challenter_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA221745496005FFC8C /* ic_challenter_marker.png */; };
 		560A1DA621745D7E005FFC8C /* ic_right_foot.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA521745D6A005FFC8C /* ic_right_foot.png */; };
 		560A1DA721745D7E005FFC8C /* ic_left_foot.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA421745B44005FFC8C /* ic_left_foot.png */; };
 		560A1DA92174616B005FFC8C /* ic_left_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DA821746164005FFC8C /* ic_left_foot_hl.png */; };
 		560A1DAB217462A0005FFC8C /* ic_right_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = 560A1DAA21746297005FFC8C /* ic_right_foot_hl.png */; };
+		56240F9621756AC00003C239 /* ic_usainbolt_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 56240F9421756AAC0003C239 /* ic_usainbolt_marker.png */; };
+		56240F9721756AC00003C239 /* ic_challenter_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 56240F9521756AB80003C239 /* ic_challenter_marker.png */; };
 		566273A7216C7C4B008549D6 /* TimerBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662739B216C619F008549D6 /* TimerBackView.swift */; };
 		56CFFCC6216D5F8F0008DA70 /* TimerPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CFFCC5216D5F8F0008DA70 /* TimerPageContainer.swift */; };
 		56CFFCC8216D5FB60008DA70 /* TimerPageContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 56CFFCC7216D5FA00008DA70 /* TimerPageContainer.xib */; };
@@ -95,12 +95,12 @@
 		560A1D9A217409F9005FFC8C /* RacingGameContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RacingGameContainer.swift; sourceTree = "<group>"; };
 		560A1D9B217409F9005FFC8C /* RacingGameContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RacingGameContainer.xib; sourceTree = "<group>"; };
 		560A1D9E21741571005FFC8C /* coffe_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coffe_cup.png; path = ../../../Example/RDGameKit/Images.xcassets/coffe_cup.imageset/coffe_cup.png; sourceTree = "<group>"; };
-		560A1DA0217452BE005FFC8C /* usainbolt_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usainbolt_marker.png; sourceTree = "<group>"; };
-		560A1DA221745496005FFC8C /* ic_challenter_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_challenter_marker.png; sourceTree = "<group>"; };
 		560A1DA421745B44005FFC8C /* ic_left_foot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_left_foot.png; sourceTree = "<group>"; };
 		560A1DA521745D6A005FFC8C /* ic_right_foot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_right_foot.png; sourceTree = "<group>"; };
 		560A1DA821746164005FFC8C /* ic_left_foot_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_left_foot_hl.png; sourceTree = "<group>"; };
 		560A1DAA21746297005FFC8C /* ic_right_foot_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_right_foot_hl.png; sourceTree = "<group>"; };
+		56240F9421756AAC0003C239 /* ic_usainbolt_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_usainbolt_marker.png; sourceTree = "<group>"; };
+		56240F9521756AB80003C239 /* ic_challenter_marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_challenter_marker.png; sourceTree = "<group>"; };
 		5662739B216C619F008549D6 /* TimerBackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerBackView.swift; sourceTree = "<group>"; };
 		56CFFCC5216D5F8F0008DA70 /* TimerPageContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPageContainer.swift; sourceTree = "<group>"; };
 		56CFFCC7216D5FA00008DA70 /* TimerPageContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerPageContainer.xib; sourceTree = "<group>"; };
@@ -232,13 +232,13 @@
 		560A1D99217409F9005FFC8C /* RacingGame */ = {
 			isa = PBXGroup;
 			children = (
+				56240F9421756AAC0003C239 /* ic_usainbolt_marker.png */,
+				56240F9521756AB80003C239 /* ic_challenter_marker.png */,
 				560A1DAA21746297005FFC8C /* ic_right_foot_hl.png */,
 				560A1DA821746164005FFC8C /* ic_left_foot_hl.png */,
 				560A1DA521745D6A005FFC8C /* ic_right_foot.png */,
 				560A1DA421745B44005FFC8C /* ic_left_foot.png */,
 				560A1D9E21741571005FFC8C /* coffe_cup.png */,
-				560A1DA0217452BE005FFC8C /* usainbolt_marker.png */,
-				560A1DA221745496005FFC8C /* ic_challenter_marker.png */,
 				560A1D9A217409F9005FFC8C /* RacingGameContainer.swift */,
 				560A1D9B217409F9005FFC8C /* RacingGameContainer.xib */,
 			);
@@ -499,12 +499,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56240F9621756AC00003C239 /* ic_usainbolt_marker.png in Sources */,
+				56240F9721756AC00003C239 /* ic_challenter_marker.png in Sources */,
 				560A1DAB217462A0005FFC8C /* ic_right_foot_hl.png in Sources */,
 				560A1DA92174616B005FFC8C /* ic_left_foot_hl.png in Sources */,
 				560A1DA621745D7E005FFC8C /* ic_right_foot.png in Sources */,
 				560A1DA721745D7E005FFC8C /* ic_left_foot.png in Sources */,
-				560A1DA3217454A0005FFC8C /* ic_challenter_marker.png in Sources */,
-				560A1DA1217452C4005FFC8C /* usainbolt_marker.png in Sources */,
 				560A1D9F21741667005FFC8C /* coffe_cup.png in Sources */,
 				560A1D9D21740AA0005FFC8C /* RacingGameContainer.xib in Sources */,
 				56CFFCC8216D5FB60008DA70 /* TimerPageContainer.xib in Sources */,
