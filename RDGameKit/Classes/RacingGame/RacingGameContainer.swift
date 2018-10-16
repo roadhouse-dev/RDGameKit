@@ -234,7 +234,7 @@ public class RacingGameContainer: UIView {
             self.descriptionLabel.text = "You didn't beat Usain Bolt this time."
         }
 
-        self.resultLabel.text = "Your Time: \(self.playerTime.toReadableStringThreeD())"
+        self.resultLabel.text = "Your Time: \(self.playerTime.toReadableString())"
     }
     
     public func upTime() -> Int {
