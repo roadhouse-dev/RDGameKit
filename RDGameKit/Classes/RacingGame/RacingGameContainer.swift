@@ -48,9 +48,10 @@ public class RacingGameContainer: UIView {
     var playerStartUpTime: Int?
     var playerEndUpTime: Int?
 
-    var numbersFinished = 0
     public var delegate: RacingGameContainerDelegate?
-
+    
+    var boltsAnimator: UIViewPropertyAnimator?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
@@ -114,6 +115,9 @@ public class RacingGameContainer: UIView {
     }
     
     @IBAction func retry(_ sender: Any) {
+        //boltsAnimator?.state
+        //boltsAnimator = nil
+        
         self.secondLeadingConstraint.constant = -18
         self.leadingConstraint.constant = -18
         self.layoutIfNeeded()
@@ -168,17 +172,11 @@ public class RacingGameContainer: UIView {
         self.leadingConstraint.constant = self.trackWidth
         print("runFirstPlayer s uptime: \(upTime())")
 
-//        UIView.animate(withDuration: boltTime) {
-//            self.layoutIfNeeded()
-//            self.checkGameEnd()
-//        }
-        
-        UIView.animate(withDuration: boltTime, animations: {
+        boltsAnimator = UIViewPropertyAnimator(duration: boltTime, curve: .easeIn) {
             self.layoutIfNeeded()
-        }) { (isCompleted) in
-            print("runFirstPlayer isCompleted: \(isCompleted)")
-            self.checkGameEnd()
         }
+        boltsAnimator?.startAnimation()
+
     }
     
     private func moveSecondUser() {
@@ -206,12 +204,10 @@ public class RacingGameContainer: UIView {
     }
     
     func checkGameEnd() {
-        numbersFinished += 1
         
-        if numbersFinished == 2 {
-            self.updateResult()
-            self.numbersFinished = 0
-        }
+        boltsAnimator?.stopAnimation(true)
+        self.updateResult()
+
         print("runFirstPlayer e uptime: \(upTime())")
         print("checkGameEnd")
     }
