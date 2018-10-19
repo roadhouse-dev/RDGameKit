@@ -1,5 +1,5 @@
 PODS:
-  - RDGameKit (0.1.2)
+  - RDGameKit (0.1.17)
 
 DEPENDENCIES:
   - RDGameKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RDGameKit: 5cfa995160d4a3ade7bcd56777c8a1dff37a3186
+  RDGameKit: fc17138279377baac70d14588538e85e72b5f06b
 
 PODFILE CHECKSUM: 0148f8860905816abcc644c50ab1ec0f26e5046e
 

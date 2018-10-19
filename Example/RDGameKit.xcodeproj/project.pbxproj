@@ -12,6 +12,7 @@
 		5645064421019DA10049BFB1 /* ScratchExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645064021019DA10049BFB1 /* ScratchExampleVC.swift */; };
 		5645064521019DA10049BFB1 /* TicTacToeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645064121019DA10049BFB1 /* TicTacToeVC.swift */; };
 		5645064621019DA10049BFB1 /* SpinWheelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645064221019DA10049BFB1 /* SpinWheelVC.swift */; };
+		5654FB52217964260006B590 /* Small LCD Sign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5654FB51217964260006B590 /* Small LCD Sign.ttf */; };
 		56627392216C52CD008549D6 /* TimerGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56627391216C52CD008549D6 /* TimerGameVC.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		5645064021019DA10049BFB1 /* ScratchExampleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchExampleVC.swift; sourceTree = "<group>"; };
 		5645064121019DA10049BFB1 /* TicTacToeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeVC.swift; sourceTree = "<group>"; };
 		5645064221019DA10049BFB1 /* SpinWheelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinWheelVC.swift; sourceTree = "<group>"; };
+		5654FB51217964260006B590 /* Small LCD Sign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Small LCD Sign.ttf"; sourceTree = "<group>"; };
 		56627391216C52CD008549D6 /* TimerGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerGameVC.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RDGameKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDGameKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5654FB51217964260006B590 /* Small LCD Sign.ttf */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -263,6 +266,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				5654FB52217964260006B590 /* Small LCD Sign.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

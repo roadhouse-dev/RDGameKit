@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Small LCD Sign.ttf">
+            <string>Small-LCD-Sign</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Scratch ExampleVC-->
         <scene sceneID="M3e-sh-cJZ">
@@ -89,26 +94,13 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z59-IV-lPo" customClass="TimerPageContainer" customModule="RDGameKit">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" red="0.96078431369999995" green="0.63137254899999995" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUU-Q3-oTO">
-                                <rect key="frame" x="16" y="687" width="343" height="40"/>
-                                <color key="backgroundColor" red="0.18039215689999999" green="0.42745098040000001" blue="0.59215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="yaf-mQ-uYM"/>
-                                </constraints>
-                                <state key="normal" title="ENTER TO WIN">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.5450980392" green="0.7725490196" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Otm-c7-iiB" firstAttribute="top" secondItem="OUU-Q3-oTO" secondAttribute="bottom" constant="-60" id="0qT-2p-Tos"/>
                             <constraint firstItem="Z59-IV-lPo" firstAttribute="leading" secondItem="mUf-W0-eps" secondAttribute="leading" id="5zb-qO-xYx"/>
-                            <constraint firstItem="OUU-Q3-oTO" firstAttribute="trailing" secondItem="mUf-W0-eps" secondAttribute="trailingMargin" id="R10-PB-gxw"/>
                             <constraint firstAttribute="trailing" secondItem="Z59-IV-lPo" secondAttribute="trailing" id="cqP-zq-nfL"/>
-                            <constraint firstItem="OUU-Q3-oTO" firstAttribute="leading" secondItem="mUf-W0-eps" secondAttribute="leadingMargin" id="lz0-Fd-nYp"/>
                             <constraint firstItem="Otm-c7-iiB" firstAttribute="top" secondItem="Z59-IV-lPo" secondAttribute="bottom" id="rl9-3O-o14"/>
                             <constraint firstItem="Z59-IV-lPo" firstAttribute="top" secondItem="u42-mg-4d3" secondAttribute="bottom" id="whs-wE-Pzt"/>
                         </constraints>
@@ -242,8 +234,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Game Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SL0-ly-5Yq">
-                                                    <rect key="frame" x="106" y="11.5" width="163" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="61" y="13.5" width="253" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Small-LCD-Sign" family="Small LCD Sign" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>

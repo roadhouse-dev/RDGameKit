@@ -19,7 +19,7 @@ extension TimeInterval {
         // Milliseconds
         let ms = Int((self.truncatingRemainder(dividingBy: 1)) * 1000)
         // Seconds
-        let s = Int(self) % 60
+        let s = Int(self) % 99
         // Minutes
         let mn = (Int(self) / 60) % 60
         // Hours
@@ -31,11 +31,11 @@ extension TimeInterval {
             //dont deal with hour
         }
         
-        if mn != 0 {
-            readableStr += String(format: "%0.2d:", mn)
-        } else {
-            readableStr += "00:"
-        }
+        //if mn != 0 {
+          //  readableStr += String(format: "%0.2d:", mn)
+        //} else {
+          //  readableStr += "00:"
+        //}
         
         if s != 0 {
             readableStr += String(format: "%0.2d:", s)

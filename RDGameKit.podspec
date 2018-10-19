@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RDGameKit'
-  s.version          = '0.1.17'
+  s.version          = '0.1.18'
   s.summary          = 'RDGameKit provide some common games.'
 
 # This description is used to generate tags and improve search results.
@@ -36,6 +36,10 @@ TODO: Add long description of the pod here.
   #s.resource_bundles = {
   #  'RDGameKit' => ['RDGameKit/Assets/**/*.xib']
   #}
+  
+  s.resource_bundles = {
+      'RDGameKit' => ['RDGameKit/Classes/**/*.ttf']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
