@@ -74,7 +74,7 @@ public class TimerPageContainer: UIView {
     
     private func showControlArea() {
         self.controlAreaBottomCT.constant = 0
-        UIView.animate(withDuration: 0.5) {
+        UIView.animate(withDuration: 0.3) {
             self.layoutIfNeeded()
         }
     }
@@ -83,6 +83,7 @@ public class TimerPageContainer: UIView {
         self.controlAreaBottomCT.constant = -180
         UIView.animate(withDuration: 0.5) {
             self.layoutIfNeeded()
+            self.tapAreaButton.isEnabled = true
         }
         
         self.counter = 0
@@ -100,6 +101,7 @@ public class TimerPageContainer: UIView {
         
         if counter == 2 {
             //update enter button
+            self.tapAreaButton.isEnabled = false
             timer?.invalidate()
             showControlArea()
             
