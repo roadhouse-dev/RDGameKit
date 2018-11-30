@@ -21,7 +21,7 @@ extension TimeInterval {
         // Seconds
         let s = Int(self) % 99
         // Minutes
-        let mn = (Int(self) / 60) % 60
+//        let mn = (Int(self) / 60) % 60
         // Hours
         let hr = (Int(self) / 3600)
         

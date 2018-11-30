@@ -48,7 +48,7 @@ public final class GameBoard {
     }
     
     public var marksAndPositions: [(mark: Mark, position: Position)] {
-        return positions.flatMap { position in
+        return positions.compactMap { position in
             if let mark = markAtPosition(position: position) {
                 return (mark, position)
             }

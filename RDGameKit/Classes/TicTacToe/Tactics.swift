@@ -79,7 +79,7 @@ struct ForkTactic: NewellAndSimonTactic {
     private func findForkPositionsWithInfo(info: Info, andOtherInfos otherInfos: [Info]) -> [GameBoard.Position] {
         return otherInfos
             .filter  { info.markedPosition != $0.markedPosition  }
-            .flatMap { info.findIntersectingPositionWithInfo(info: $0) }
+            .compactMap { info.findIntersectingPositionWithInfo(info: $0) }
     }
 }
 
@@ -165,7 +165,7 @@ struct OppositeCornerTactic: NewellAndSimonTactic {
         
         return GameBoard.Diagonal
             .allValues()
-            .flatMap { choosePositionInDiagonal(diagonal: $0, forMark: mark, gameBoard: gameBoard) }
+            .compactMap { choosePositionInDiagonal(diagonal: $0, forMark: mark, gameBoard: gameBoard) }
             .first
     }
     
@@ -242,7 +242,7 @@ private struct Info {
     
     func isForkableWithMark(mark: Mark) -> Bool {
         let
-        nonNilMarks = marks.flatMap { $0 },
+        nonNilMarks = marks.compactMap { $0 },
                                     onlyOneMark = nonNilMarks.count == 1,
         isRightMark = nonNilMarks.first == mark
         return onlyOneMark && isRightMark
