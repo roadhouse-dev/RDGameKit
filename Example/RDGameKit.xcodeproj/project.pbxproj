@@ -19,8 +19,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		9366282721B0FA600050F568 /* SimonGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366282621B0FA600050F568 /* SimonGameVC.swift */; };
-		9366282921B100B70050F568 /* SimonGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366282821B100B70050F568 /* SimonGameView.swift */; };
+		9366283121B101EB0050F568 /* SimonGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366282F21B101EB0050F568 /* SimonGameView.swift */; };
+		9366283221B101EB0050F568 /* SimonGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366283021B101EB0050F568 /* SimonGameVC.swift */; };
 		D9F53FB687572DE20434376A /* Pods_RDGameKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4518E5729BB3D330406B1932 /* Pods_RDGameKit_Example.framework */; };
 		DDA815EEA35B9FB0EBEDB264 /* Pods_RDGameKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0888029FF9529E0B62406B51 /* Pods_RDGameKit_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -57,8 +57,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8D6A4916B87BEA8509EE6B56 /* Pods-RDGameKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDGameKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDGameKit_Example/Pods-RDGameKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		922E306C471B2680748DE0F7 /* Pods-RDGameKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDGameKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RDGameKit_Tests/Pods-RDGameKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9366282621B0FA600050F568 /* SimonGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonGameVC.swift; sourceTree = "<group>"; };
-		9366282821B100B70050F568 /* SimonGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonGameView.swift; sourceTree = "<group>"; };
+		9366282F21B101EB0050F568 /* SimonGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimonGameView.swift; path = Simon/SimonGameView.swift; sourceTree = "<group>"; };
+		9366283021B101EB0050F568 /* SimonGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimonGameVC.swift; path = Simon/SimonGameVC.swift; sourceTree = "<group>"; };
 		B44DC11602C349B60FE7519A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B804F0203B1ED7E0432E5DB4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DB57A9DE6A6E8E4C493992F8 /* Pods-RDGameKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RDGameKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RDGameKit_Example/Pods-RDGameKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 				5645064121019DA10049BFB1 /* TicTacToeVC.swift */,
 				56627391216C52CD008549D6 /* TimerGameVC.swift */,
 				560A1D9721740582005FFC8C /* RacingGameVC.swift */,
-				9366282621B0FA600050F568 /* SimonGameVC.swift */,
-				9366282821B100B70050F568 /* SimonGameView.swift */,
+				9366283021B101EB0050F568 /* SimonGameVC.swift */,
+				9366282F21B101EB0050F568 /* SimonGameView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -352,10 +352,10 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				5645064621019DA10049BFB1 /* SpinWheelVC.swift in Sources */,
 				5645064421019DA10049BFB1 /* ScratchExampleVC.swift in Sources */,
-				9366282721B0FA600050F568 /* SimonGameVC.swift in Sources */,
-				9366282921B100B70050F568 /* SimonGameView.swift in Sources */,
+				9366283221B101EB0050F568 /* SimonGameVC.swift in Sources */,
 				5645064321019DA10049BFB1 /* Utils.swift in Sources */,
 				5645064521019DA10049BFB1 /* TicTacToeVC.swift in Sources */,
+				9366283121B101EB0050F568 /* SimonGameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

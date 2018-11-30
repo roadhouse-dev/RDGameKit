@@ -21,7 +21,7 @@ enum SimonFeedback {
     case correct
 }
 
-class SimonView {
+class SimonView: UIView {
     weak var delegate: SimonViewDelegate?
 
     var gameButtons: [SimonGameButton] = []
