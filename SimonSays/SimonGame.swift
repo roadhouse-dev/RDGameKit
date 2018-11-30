@@ -28,7 +28,7 @@ private struct SimonGameLevel {
     }
 }
 
-class SimonGame {
+public class SimonGame {
     private let simonView: SimonView
     private var currentLevel: SimonGameLevel
 
@@ -52,7 +52,7 @@ class SimonGame {
 }
 
 extension SimonGame: SimonViewDelegate {
-    func simonView(_ simonView: SimonView, didSelectIndex index: Int) {
+    public func simonView(_ simonView: SimonView, didSelectIndex index: Int) {
         if currentLevel.isUserGuessCorrect(index) {
 
             currentLevel.correctAnswers += 1

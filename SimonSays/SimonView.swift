@@ -7,21 +7,21 @@
 
 import UIKit
 
-protocol SimonViewDelegate: class {
+public protocol SimonViewDelegate: class {
     func simonView(_ simonView: SimonView, didSelectIndex index: Int)
 }
 
-protocol SimonGameButton {
+public protocol SimonGameButton {
     func setHighlighted(_ highlighted: Bool)
     func setEnabled(_ enabled: Bool)
 }
 
-enum SimonFeedback {
+public enum SimonFeedback {
     case incorrect
     case correct
 }
 
-class SimonView: UIView {
+open class SimonView: UIView {
     weak var delegate: SimonViewDelegate?
 
     var gameButtons: [SimonGameButton] = []
