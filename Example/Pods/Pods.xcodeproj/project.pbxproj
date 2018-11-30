@@ -7,59 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04977826D02FA1C801232A1EABB0678F /* RDGameKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4780736D5F098DF16826940E96775804 /* RDGameKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09A83B50B828011D1C380B4C68F2F1BC /* ScratchCardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3164C809AFDA13EFB684820E8D1576F8 /* ScratchCardContainer.swift */; };
-		0A6C29935EE3A4321295668063FF5AE6 /* BoardAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB3586F78A8F4817BCA576E9EA7FE4B /* BoardAppearance.swift */; };
+		04977826D02FA1C801232A1EABB0678F /* RDGameKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 900C012C6626B9399ACAA744939CE687 /* RDGameKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		056D3E3AB8DD9D51B64D9B6A0A43BF52 /* HERO_PANEL.png in Sources */ = {isa = PBXBuildFile; fileRef = 6378A3CD70DE9385AD36763BB4939ABC /* HERO_PANEL.png */; };
 		0B4156686D70330C6F94CCBB407E75FE /* Pods-RDGameKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D719E1D0CEFFE047270CE23476F427 /* Pods-RDGameKit_Tests-dummy.m */; };
-		0E7D98FD3B5F14C2A246C3B2598280C6 /* ic_challenter_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 069B30E3B78C6D27C9B7E029F5413E72 /* ic_challenter_marker.png */; };
-		167C20B07824BF8E36C4009AFC552CFB /* SpinWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D71CD423FAC94A83639EDDB1CCDD43 /* SpinWheel.swift */; };
-		16E2C10224E6F1DFF47CCF8B136D1972 /* TimerBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB132929A2518FB9447BE6ABB14DD508 /* TimerBackView.swift */; };
-		17FA8F33C9C631FF78510EAB9A3F052E /* GameBoardRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD83AEE5C114BC4EDE0511F939434BCA /* GameBoardRenderer.swift */; };
-		2BCCE2E7AEF9EA1A52A8803460100F25 /* SpinWheelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F8A9A428EE557A878F0114A928862 /* SpinWheelLayer.swift */; };
-		2EB52BC9887E238495AC74E78FC19330 /* GameBoardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBBC8EA46FF5B406BC048F702CF884E /* GameBoardLayout.swift */; };
-		38A5DE032F28AFFEAAA324484F93F6C6 /* TimerPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B48DA2F0B2E3D3C0B1AA8495707988 /* TimerPageContainer.swift */; };
-		3CEF480E14806B77B46BC3B4A93227E0 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D2C0CA069A7C634FAB4F0631BD12B3 /* GameBoard.swift */; };
-		3DD002961608403B4CBEC5EDD5C3819A /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E41FB20C48C834DD6707EFDF64EB700 /* GameBoardView.swift */; };
-		3E4E1F4B402ADAA10200B15948575858 /* ic_right_foot.png in Sources */ = {isa = PBXBuildFile; fileRef = B18BC9595D94F023653277EE5C8A4997 /* ic_right_foot.png */; };
-		5401670CCD6D5CC29AC714D4933D8C1B /* SpinWheelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B336175646565B3FAF395224B3E51B /* SpinWheelContainer.swift */; };
-		55BAF4FDAE5948F5C7B12A4B6FB6BBDE /* RDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E95FD8F4E8B5C75FDA0C7EEED8EB539 /* RDExtensions.swift */; };
-		5654FB5721797D4D0006B590 /* BOLT.png in Resources */ = {isa = PBXBuildFile; fileRef = 5654FB5621797D4D0006B590 /* BOLT.png */; };
+		111A922800C29D4D4AD1875535C2F674 /* ScratchCardContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 20AAFDF0B78D875EB0521F2E25FC63E1 /* ScratchCardContainer.xib */; };
+		11AB61AA52CA3CAC6A9A4F767233A53F /* UserStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254561B4251A59B9C52655F329B0A4E3 /* UserStrategy.swift */; };
+		120042056E34991A5BBA468028A9853E /* RacingGameContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = F5C6A8747AE3C6E5B670184E1C479210 /* RacingGameContainer.xib */; };
+		138DA726B48666A4A46C8129548E452E /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB1A250EDF0CBE7C191BC7E1A28262 /* GameBoardView.swift */; };
+		19EE288FB52A2D6A2D8E15BED7F44B68 /* RDExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE33E0F77DE7F8F6F54B4711BE5BBEE /* RDExtensions.swift */; };
+		1CFC2921ACDC9929B549A486AA7E9E86 /* GameBoardRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0122B5ED9BD31EB4ADFA7CFDDF5FC2 /* GameBoardRenderer.swift */; };
+		1F86631E1F69086988F0B28C1A5E33BE /* SpinWheelContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 1AAAE5963E66AFE09E7D5717F02F3944 /* SpinWheelContainer.xib */; };
+		245B16E35AD842015296F6654E3B78F0 /* SpinWheelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575895328B0B22637E9434847E4A76AD /* SpinWheelLayer.swift */; };
+		2A6DE5DEF14D8765D9346EBA6A1CED10 /* RDGameKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BFA03E468A2C7F062419E83116FDB8 /* RDGameKit-dummy.m */; };
+		30D862EE4E853636F48FE2CBBF79B101 /* SpinningWheelAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D3CEAE5A3BBF66395013733A972C75 /* SpinningWheelAnimator.swift */; };
+		35ED1744DDFE696A6028B440C758AC23 /* OutcomeAnalyst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD4535781BEF641020A3AD57BA7283 /* OutcomeAnalyst.swift */; };
+		39E386F1BFC3F0AEFF3BE5268B408996 /* ScratchCardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F523B18F60389CDC3234E69016E38D /* ScratchCardContainer.swift */; };
+		42BEBC1C1629780874B2B487F2BFA9EF /* ScratchMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82427C76770B042B20344E710ECD6359 /* ScratchMask.swift */; };
+		4C4F8300EF1A445C49883FE1D2BED197 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C98F4A5E741FA285CFCAC1C27E55A0 /* Utils.swift */; };
+		531F05E0917C43C39830AED948619C72 /* RandomTactic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A551A5FC8BD63BA7948258E47EB2AED3 /* RandomTactic.swift */; };
 		5A7BCBE6657BA4CF7D1CF93B014A57DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		65C65E852719413B6EE7F79B2C5E6931 /* HEADER.png in Sources */ = {isa = PBXBuildFile; fileRef = 91FA958151B5C414498467EA5F648A06 /* HEADER.png */; };
-		761427ABC9ABAA08B715D18D72B3462E /* NewellAndSimonStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD90EEC8205F53300B908F1BF42CF64 /* NewellAndSimonStrategy.swift */; };
-		7BAD28E83D8B168E31C8B7B9E634730F /* Small LCD Sign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAE6C10FD6574400E74600FBD8ECCA6E /* Small LCD Sign.ttf */; };
-		7C59479CB8EFA7A69F2630681F739C68 /* SpinWheelContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9358238C8B6C96840D026BD00FBA0128 /* SpinWheelContainer.xib */; };
-		89DD38181A492EE172B7B9AF9747E890 /* TicTacToeContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4132CFA3F08575462FC2012CE235C44C /* TicTacToeContainer.xib */; };
-		8FB37C28BD33562437F48578453413C0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05714C2113CF7784222FCE63AD5432 /* Game.swift */; };
-		9206C029D8341894392F7B700436CB7D /* RandomTactic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C0D2C7060159358D1564C3B516E84 /* RandomTactic.swift */; };
-		94219D08893229D6E58DC6087A8D7688 /* SpinWheelSliceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EEA0A260152FB4AC9F1E328066E892 /* SpinWheelSliceProtocol.swift */; };
-		9686A1C8895445EAA173086789958ECB /* RDGameKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C39D1CDC4101C91EE010038448920 /* RDGameKit-dummy.m */; };
-		9A8FFA173C7E37BB067B0D54B97B725D /* ic_usainbolt_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 5968E7FFA8C5DA49D364CD895F901F47 /* ic_usainbolt_marker.png */; };
+		5D026EBBC534CF57799708DBE703CEF4 /* RacingGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1768D913126891E1726D56E2F54B098 /* RacingGameContainer.swift */; };
+		68ACF8AD814619D40E2A1FAD960D3E9D /* ic_challenter_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = 56430D1EC93E993B130D612EBD1BCCAA /* ic_challenter_marker.png */; };
+		6A1245BB04F427DE1A1ADCB0E567246A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0E871311BA36E5812C4A0515F463CA /* Game.swift */; };
+		6FD461424BE4F171F7C77812C0DDD9D3 /* BoardAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875043D8035FAD6B0A8AAB693D82F2DF /* BoardAppearance.swift */; };
+		7BAD28E83D8B168E31C8B7B9E634730F /* Small LCD Sign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831F915F9E74699E7A14BF2FFB4C7804 /* Small LCD Sign.ttf */; };
+		7F48475CEA3ECB4F277792BD9CAD40FF /* BASE_PANEL.png in Sources */ = {isa = PBXBuildFile; fileRef = 5F87004860922CA5E412A96F568305F3 /* BASE_PANEL.png */; };
+		86F7025BA61D6F6EE4557618E5D8060B /* BOLT.png in Sources */ = {isa = PBXBuildFile; fileRef = 79B1B4D388709232B836F0C1B92D67B5 /* BOLT.png */; };
+		87092BCB9C28FB45661E67C8B364A2D4 /* SpinWheelSliceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F5CD1C338A7854802B02CF47CF9E7 /* SpinWheelSliceProtocol.swift */; };
+		88613A659826D747C53E042332B573D2 /* TimerBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52A50A36F04902D0574087FD85F6100 /* TimerBackView.swift */; };
+		8F08E751250C6D44AE59A21AE2678449 /* NewellAndSimonStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC55CE8F7683511709BA207759B9992 /* NewellAndSimonStrategy.swift */; };
+		935B58D005455CE72B5D9829683CC4CA /* ic_left_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = 2D509643F7A1888A3AF49844582C6DED /* ic_left_foot_hl.png */; };
+		98049F42DF6D06D0BD7BE8E7DCB29FF4 /* Small LCD Sign.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 831F915F9E74699E7A14BF2FFB4C7804 /* Small LCD Sign.ttf */; };
 		A117367495A4A7EAF4914A0AC01CFB52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		A613FFD88C13E66748396C2C32C0C464 /* ScratchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5D9BAB2CAB881B756EFB41A6B833ED /* ScratchCard.swift */; };
+		A2E7EED13C5CACC9E0A72D47248B272B /* GameBoardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405DED0515FCB11C3F6AB231867EA1B /* GameBoardLayout.swift */; };
+		ABAACFDAB9F77CE48614FAEA9B7960AA /* TicTacToeContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = CECCFC473915B92159AECF3697858944 /* TicTacToeContainer.xib */; };
+		ACD90442426E7F1F04373674B3B362A2 /* ic_right_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = 431FF9B6841A2D46055A1F7FD9E95448 /* ic_right_foot_hl.png */; };
+		ACE248D9B386160333A1595FF86AD7D2 /* ScratchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65DF906AE526400856C28CA812A81E8 /* ScratchCard.swift */; };
+		AD21DA6F1322718B58CDE0F9D467CF43 /* TicTacToeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672EED3BFA6B265A6C8D2718D1E5D6F0 /* TicTacToeContainer.swift */; };
 		AFF7CA01CE964B06225AB9B3F117AF18 /* RDGameKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D81504D8158DCC4E75DC871C41E82171 /* RDGameKit.bundle */; };
+		B07637332BFA94A0345FF90088BEF9A8 /* SpinWheelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E3918021A2CA5B37D77F072F8F01F /* SpinWheelContainer.swift */; };
 		B0F1D4AC6E75046612EC9C7B3B640DC3 /* Pods-RDGameKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E3D2803D4D6BE4DD8BBB71BCB5A8F5 /* Pods-RDGameKit_Example-dummy.m */; };
 		B0FAEFF510D397A8B4310E9E38495306 /* Pods-RDGameKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04877046E62A2FD58DA6F9FFCCC0695E /* Pods-RDGameKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1486928C73EF4C4BFFE8F974858743D /* OutcomeAnalyst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237276766D0808AF192618E201941FE1 /* OutcomeAnalyst.swift */; };
-		C39772ADE6BCD4F3979286F081EBFFA3 /* RacingGameContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 0FC79AC34365C1E97072E9D78AD42034 /* RacingGameContainer.xib */; };
-		C41DB95665ACAFD985074D9C8086BDFC /* Small LCD Sign.ttf in Sources */ = {isa = PBXBuildFile; fileRef = FAE6C10FD6574400E74600FBD8ECCA6E /* Small LCD Sign.ttf */; };
-		C7A86685D21ED1A4F8DEF2E8A85C4974 /* UserStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7437BB53CEA4A34FF7AD9317691CEE2 /* UserStrategy.swift */; };
-		C7DC917066A12D6572F21773AEF4FCD9 /* RacingGameContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1A8DC20CD668E5C8DCEA0B56A31B2 /* RacingGameContainer.swift */; };
-		E051C417575A8390188FFF2C216B132B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7C64EBC268F45DAB718E394813B386 /* Utils.swift */; };
-		E5E0E484CE597A3ACC14D52BC773D09D /* SpinningWheelAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B05DF26E39E4FC79429BA419055A013 /* SpinningWheelAnimator.swift */; };
+		C003400829F104D2A56906F569EF1C87 /* ic_right_foot.png in Sources */ = {isa = PBXBuildFile; fileRef = BD53FCD2E1F4F464F04E5D510C412D42 /* ic_right_foot.png */; };
+		C2C79280DBE7F098C6438FB119DE37F7 /* SpinWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA09DA9EEA5ADA35C423C6346C84F43 /* SpinWheel.swift */; };
+		CDA96626376B5FB7F49E6E23B715001D /* ic_left_foot.png in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBE7CF4119C103C70DBF8E21CF215 /* ic_left_foot.png */; };
+		D89CD2D1B1EB78701B01F935E961E1F2 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28958314A396F75EC4964C49EEB2068 /* GameBoard.swift */; };
+		DD6668423B946F9297069CC4A1723327 /* ic_usainbolt_marker.png in Sources */ = {isa = PBXBuildFile; fileRef = C5C8227C725DA9A416FEBD8C61051670 /* ic_usainbolt_marker.png */; };
+		E49A4D3C7D82C757CB3FCF16F33D8522 /* HEADER.png in Sources */ = {isa = PBXBuildFile; fileRef = 2FB69820921AF6195424159E5A710547 /* HEADER.png */; };
 		E61DD0A739F41BF65C1FFD385B558DEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		E6A1961611ACB283F8A65189279706BC /* ic_right_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = D40BC3C03FDE9585C2AE24474B63DA0C /* ic_right_foot_hl.png */; };
-		E7118B70E3982D22D6D5F717E0D306BF /* ScratchMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7512320F76AB2F0D5398ECFA9C01F8A0 /* ScratchMask.swift */; };
-		E8FD71DEFC481A8BED1810AB3322FCEE /* SpinWheelSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7DE8F08B24F16B8497266EF8BD3474 /* SpinWheelSlice.swift */; };
-		E9EC7C9B7AE796F09CC49D2405C2322F /* TicTacToeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CDE2C002CC998FBB4E598BCDB1E9D0C /* TicTacToeContainer.swift */; };
 		EB1D656111A37C4595B7522AC89FD161 /* Pods-RDGameKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB0DCCEF3A74EBE1CEFE93BF8F506D3 /* Pods-RDGameKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED81078C7705C934901E2E9BD49EFABF /* HERO_PANEL.png in Sources */ = {isa = PBXBuildFile; fileRef = F54C076220F910D8AC87844BAF3CF335 /* HERO_PANEL.png */; };
-		F2FB7B22CCF29D89E486F270CFDBC425 /* Tactics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2E4564ECAE889A76D8BFA39387A6E /* Tactics.swift */; };
-		F4D6F0D9538C5E75DDAD1F12A450B077 /* ic_left_foot.png in Sources */ = {isa = PBXBuildFile; fileRef = 9D2A7D5167405912E0CAD330EC2559B5 /* ic_left_foot.png */; };
-		F55EDE1438505697B0577BFCA2314CF7 /* BASE_PANEL.png in Sources */ = {isa = PBXBuildFile; fileRef = A8F5BD6E4DCB20507BC5FA911047FB91 /* BASE_PANEL.png */; };
-		FA6570132D39079753E9D68A6B5E0208 /* TimerPageContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 8F4BFBA537A3C426380BFE2487D069C7 /* TimerPageContainer.xib */; };
-		FB3B6AA26A1C895A452B5EF30CB9F350 /* ScratchCardContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 81FB12EAABF3241869C07E44758406EE /* ScratchCardContainer.xib */; };
-		FF45C118A049D5898A46FFD7626CDF96 /* ic_left_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = 4C2112574F5B74E80592420BCD6C1A0B /* ic_left_foot_hl.png */; };
+		EBC02856DDFB5569ECD5ACBBE51BD62A /* Tactics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C9097F1AF1E3BD3344987B9729F01D /* Tactics.swift */; };
+		F74DCEF6454548A77D1E9CDEB261B7BF /* SpinWheelSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1841009E905BA8FF37C03E43D8D4A6A /* SpinWheelSlice.swift */; };
+		FA6805863207F0168E2F373F714FEF2F /* TimerPageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540A4B554BD2237CBE04BA82EB9609E /* TimerPageContainer.swift */; };
+		FFC6D10E13E4FB6FAC7B97FFA9A48977 /* TimerPageContainer.xib in Sources */ = {isa = PBXBuildFile; fileRef = 5F4AFBF0FFD5FD7F95E3C79DF5B963B8 /* TimerPageContainer.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,84 +87,84 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02A760CBF99D9513EBA230AFEE5626C7 /* RDGameKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RDGameKit.modulemap; sourceTree = "<group>"; };
 		04877046E62A2FD58DA6F9FFCCC0695E /* Pods-RDGameKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RDGameKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		069B30E3B78C6D27C9B7E029F5413E72 /* ic_challenter_marker.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_challenter_marker.png; sourceTree = "<group>"; };
 		07D719E1D0CEFFE047270CE23476F427 /* Pods-RDGameKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RDGameKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		0CA1A8DC20CD668E5C8DCEA0B56A31B2 /* RacingGameContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RacingGameContainer.swift; sourceTree = "<group>"; };
-		0FBBC8EA46FF5B406BC048F702CF884E /* GameBoardLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoardLayout.swift; sourceTree = "<group>"; };
-		0FC79AC34365C1E97072E9D78AD42034 /* RacingGameContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RacingGameContainer.xib; sourceTree = "<group>"; };
+		09D3CEAE5A3BBF66395013733A972C75 /* SpinningWheelAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinningWheelAnimator.swift; sourceTree = "<group>"; };
+		0C0AC6E7D407CA43426A86F49CD536DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17AA9A114ACF141B89DFDE8C8F8404C2 /* Pods-RDGameKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDGameKit_Tests-resources.sh"; sourceTree = "<group>"; };
-		237276766D0808AF192618E201941FE1 /* OutcomeAnalyst.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OutcomeAnalyst.swift; sourceTree = "<group>"; };
+		1AAAE5963E66AFE09E7D5717F02F3944 /* SpinWheelContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SpinWheelContainer.xib; sourceTree = "<group>"; };
+		1AAD4535781BEF641020A3AD57BA7283 /* OutcomeAnalyst.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OutcomeAnalyst.swift; sourceTree = "<group>"; };
+		20AAFDF0B78D875EB0521F2E25FC63E1 /* ScratchCardContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ScratchCardContainer.xib; sourceTree = "<group>"; };
+		22CDBE7CF4119C103C70DBF8E21CF215 /* ic_left_foot.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_left_foot.png; sourceTree = "<group>"; };
+		234F5CD1C338A7854802B02CF47CF9E7 /* SpinWheelSliceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheelSliceProtocol.swift; sourceTree = "<group>"; };
 		23D845208F9AB6231AAB9DDA65841BF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		254561B4251A59B9C52655F329B0A4E3 /* UserStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserStrategy.swift; sourceTree = "<group>"; };
+		2D509643F7A1888A3AF49844582C6DED /* ic_left_foot_hl.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_left_foot_hl.png; sourceTree = "<group>"; };
 		2ED5CB5CC29F1086E8FB128455CEEEF0 /* Pods-RDGameKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDGameKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2EFB1A250EDF0CBE7C191BC7E1A28262 /* GameBoardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		2FB69820921AF6195424159E5A710547 /* HEADER.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = HEADER.png; sourceTree = "<group>"; };
 		30E3D2803D4D6BE4DD8BBB71BCB5A8F5 /* Pods-RDGameKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RDGameKit_Example-dummy.m"; sourceTree = "<group>"; };
-		3164C809AFDA13EFB684820E8D1576F8 /* ScratchCardContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScratchCardContainer.swift; sourceTree = "<group>"; };
-		4132CFA3F08575462FC2012CE235C44C /* TicTacToeContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TicTacToeContainer.xib; sourceTree = "<group>"; };
-		4780736D5F098DF16826940E96775804 /* RDGameKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDGameKit-umbrella.h"; sourceTree = "<group>"; };
-		4B4C39D1CDC4101C91EE010038448920 /* RDGameKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RDGameKit-dummy.m"; sourceTree = "<group>"; };
-		4C2112574F5B74E80592420BCD6C1A0B /* ic_left_foot_hl.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_left_foot_hl.png; sourceTree = "<group>"; };
-		51D2C0CA069A7C634FAB4F0631BD12B3 /* GameBoard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
-		5654FB5621797D4D0006B590 /* BOLT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOLT.png; sourceTree = "<group>"; };
+		40641BCACE13ED8DEBCDB7116452E7F0 /* ResourceBundle-RDGameKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-RDGameKit-Info.plist"; sourceTree = "<group>"; };
+		431FF9B6841A2D46055A1F7FD9E95448 /* ic_right_foot_hl.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_right_foot_hl.png; sourceTree = "<group>"; };
+		4AC55CE8F7683511709BA207759B9992 /* NewellAndSimonStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NewellAndSimonStrategy.swift; sourceTree = "<group>"; };
+		4F0122B5ED9BD31EB4ADFA7CFDDF5FC2 /* GameBoardRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoardRenderer.swift; sourceTree = "<group>"; };
+		56430D1EC93E993B130D612EBD1BCCAA /* ic_challenter_marker.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_challenter_marker.png; sourceTree = "<group>"; };
+		575895328B0B22637E9434847E4A76AD /* SpinWheelLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheelLayer.swift; sourceTree = "<group>"; };
 		57A0BE171B8A1764941385E94BC335B5 /* Pods-RDGameKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RDGameKit_Tests.modulemap"; sourceTree = "<group>"; };
-		5968E7FFA8C5DA49D364CD895F901F47 /* ic_usainbolt_marker.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_usainbolt_marker.png; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5B05DF26E39E4FC79429BA419055A013 /* SpinningWheelAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinningWheelAnimator.swift; sourceTree = "<group>"; };
-		5C5D9BAB2CAB881B756EFB41A6B833ED /* ScratchCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScratchCard.swift; sourceTree = "<group>"; };
-		5FB3586F78A8F4817BCA576E9EA7FE4B /* BoardAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BoardAppearance.swift; sourceTree = "<group>"; };
+		5F4AFBF0FFD5FD7F95E3C79DF5B963B8 /* TimerPageContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TimerPageContainer.xib; sourceTree = "<group>"; };
+		5F87004860922CA5E412A96F568305F3 /* BASE_PANEL.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = BASE_PANEL.png; sourceTree = "<group>"; };
 		615FABA8636A16761CB054FC4C46A7E2 /* Pods-RDGameKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RDGameKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6378A3CD70DE9385AD36763BB4939ABC /* HERO_PANEL.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = HERO_PANEL.png; sourceTree = "<group>"; };
 		65CCB672481F6DC02BD742B3DF4F2091 /* Pods_RDGameKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDGameKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A9F8A9A428EE557A878F0114A928862 /* SpinWheelLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheelLayer.swift; sourceTree = "<group>"; };
-		6CDE2C002CC998FBB4E598BCDB1E9D0C /* TicTacToeContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TicTacToeContainer.swift; sourceTree = "<group>"; };
-		7512320F76AB2F0D5398ECFA9C01F8A0 /* ScratchMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScratchMask.swift; sourceTree = "<group>"; };
+		672EED3BFA6B265A6C8D2718D1E5D6F0 /* TicTacToeContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TicTacToeContainer.swift; sourceTree = "<group>"; };
+		74BFA03E468A2C7F062419E83116FDB8 /* RDGameKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RDGameKit-dummy.m"; sourceTree = "<group>"; };
 		77BEA2704877B58E8C5F3D7E8AF6752A /* Pods-RDGameKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RDGameKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		79B1B4D388709232B836F0C1B92D67B5 /* BOLT.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = BOLT.png; sourceTree = "<group>"; };
 		7E25E6CC5EF0B516E427D02A95B93D97 /* Pods-RDGameKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDGameKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7E95FD8F4E8B5C75FDA0C7EEED8EB539 /* RDExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RDExtensions.swift; sourceTree = "<group>"; };
-		7F7DE8F08B24F16B8497266EF8BD3474 /* SpinWheelSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheelSlice.swift; sourceTree = "<group>"; };
-		8164EAF5D1C86CFA4ECA718A5C3A02A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		81D3052D7806D45FFE2E2404D0C5981B /* Pods-RDGameKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDGameKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		81E2E4564ECAE889A76D8BFA39387A6E /* Tactics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tactics.swift; sourceTree = "<group>"; };
-		81FB12EAABF3241869C07E44758406EE /* ScratchCardContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ScratchCardContainer.xib; sourceTree = "<group>"; };
-		88D71CD423FAC94A83639EDDB1CCDD43 /* SpinWheel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheel.swift; sourceTree = "<group>"; };
+		82427C76770B042B20344E710ECD6359 /* ScratchMask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScratchMask.swift; sourceTree = "<group>"; };
+		82C98F4A5E741FA285CFCAC1C27E55A0 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		831F915F9E74699E7A14BF2FFB4C7804 /* Small LCD Sign.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Small LCD Sign.ttf"; sourceTree = "<group>"; };
+		875043D8035FAD6B0A8AAB693D82F2DF /* BoardAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BoardAppearance.swift; sourceTree = "<group>"; };
 		893AE7862A33471FDD9F0937E62A4E1D /* Pods-RDGameKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDGameKit_Example-resources.sh"; sourceTree = "<group>"; };
-		8DAF89E4464FCDF08A3004D079D69771 /* ResourceBundle-RDGameKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-RDGameKit-Info.plist"; sourceTree = "<group>"; };
-		8F4BFBA537A3C426380BFE2487D069C7 /* TimerPageContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TimerPageContainer.xib; sourceTree = "<group>"; };
 		9006435E0C5BABD754846CCAAD0FCC25 /* RDGameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDGameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90B48DA2F0B2E3D3C0B1AA8495707988 /* TimerPageContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimerPageContainer.swift; sourceTree = "<group>"; };
-		91FA958151B5C414498467EA5F648A06 /* HEADER.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = HEADER.png; sourceTree = "<group>"; };
-		92C256AF0FD5A8537AE5B2D22CD49C48 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9358238C8B6C96840D026BD00FBA0128 /* SpinWheelContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SpinWheelContainer.xib; sourceTree = "<group>"; };
+		900C012C6626B9399ACAA744939CE687 /* RDGameKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDGameKit-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CD90EEC8205F53300B908F1BF42CF64 /* NewellAndSimonStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NewellAndSimonStrategy.swift; sourceTree = "<group>"; };
-		9D2A7D5167405912E0CAD330EC2559B5 /* ic_left_foot.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_left_foot.png; sourceTree = "<group>"; };
-		9E41FB20C48C834DD6707EFDF64EB700 /* GameBoardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		96C9097F1AF1E3BD3344987B9729F01D /* Tactics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tactics.swift; sourceTree = "<group>"; };
+		9B0E871311BA36E5812C4A0515F463CA /* Game.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A1841009E905BA8FF37C03E43D8D4A6A /* SpinWheelSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheelSlice.swift; sourceTree = "<group>"; };
 		A4D7621DF6334D638CCD3B263A023432 /* Pods_RDGameKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RDGameKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8F5BD6E4DCB20507BC5FA911047FB91 /* BASE_PANEL.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = BASE_PANEL.png; sourceTree = "<group>"; };
+		A52A50A36F04902D0574087FD85F6100 /* TimerBackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimerBackView.swift; sourceTree = "<group>"; };
+		A551A5FC8BD63BA7948258E47EB2AED3 /* RandomTactic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RandomTactic.swift; sourceTree = "<group>"; };
+		A5DC4BDAF5BCAA06D24EA4C60E572C76 /* RDGameKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDGameKit-prefix.pch"; sourceTree = "<group>"; };
+		AA7E3918021A2CA5B37D77F072F8F01F /* SpinWheelContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheelContainer.swift; sourceTree = "<group>"; };
 		AC43C1582B8EE8D31EDA607546B5758F /* Pods-RDGameKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RDGameKit_Example.modulemap"; sourceTree = "<group>"; };
-		AE05714C2113CF7784222FCE63AD5432 /* Game.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		AF7C64EBC268F45DAB718E394813B386 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		B18BC9595D94F023653277EE5C8A4997 /* ic_right_foot.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_right_foot.png; sourceTree = "<group>"; };
-		C834D1FDD47AD1E7A68118C285C5343C /* RDGameKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RDGameKit.xcconfig; sourceTree = "<group>"; };
+		B28958314A396F75EC4964C49EEB2068 /* GameBoard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		B540A4B554BD2237CBE04BA82EB9609E /* TimerPageContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimerPageContainer.swift; sourceTree = "<group>"; };
+		BD53FCD2E1F4F464F04E5D510C412D42 /* ic_right_foot.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_right_foot.png; sourceTree = "<group>"; };
+		C5C8227C725DA9A416FEBD8C61051670 /* ic_usainbolt_marker.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_usainbolt_marker.png; sourceTree = "<group>"; };
+		CD7952099B5B49F05123EABC028A55F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CECCFC473915B92159AECF3697858944 /* TicTacToeContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = TicTacToeContainer.xib; sourceTree = "<group>"; };
+		D1768D913126891E1726D56E2F54B098 /* RacingGameContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RacingGameContainer.swift; sourceTree = "<group>"; };
 		D182AC26397DC403126172D1676B303E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D33214AF9CC7647298CAECEA7AF5AC84 /* RDGameKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RDGameKit.modulemap; sourceTree = "<group>"; };
-		D40BC3C03FDE9585C2AE24474B63DA0C /* ic_right_foot_hl.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = ic_right_foot_hl.png; sourceTree = "<group>"; };
-		D7437BB53CEA4A34FF7AD9317691CEE2 /* UserStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UserStrategy.swift; sourceTree = "<group>"; };
-		D7EEA0A260152FB4AC9F1E328066E892 /* SpinWheelSliceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheelSliceProtocol.swift; sourceTree = "<group>"; };
+		D405DED0515FCB11C3F6AB231867EA1B /* GameBoardLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoardLayout.swift; sourceTree = "<group>"; };
 		D81504D8158DCC4E75DC871C41E82171 /* RDGameKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDGameKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB132929A2518FB9447BE6ABB14DD508 /* TimerBackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimerBackView.swift; sourceTree = "<group>"; };
-		DBA61CEE921A02408B5A1F9EBB3CFC0D /* RDGameKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDGameKit-prefix.pch"; sourceTree = "<group>"; };
-		DD83AEE5C114BC4EDE0511F939434BCA /* GameBoardRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GameBoardRenderer.swift; sourceTree = "<group>"; };
+		DBE33E0F77DE7F8F6F54B4711BE5BBEE /* RDExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RDExtensions.swift; sourceTree = "<group>"; };
+		E0545666C0C2EC0BCDF189CB2F6FE46D /* RDGameKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = RDGameKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E17543A6DE9CC455920DC77258C8AE17 /* Pods-RDGameKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDGameKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E65DF906AE526400856C28CA812A81E8 /* ScratchCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScratchCard.swift; sourceTree = "<group>"; };
+		E6F698A0C7B279C738879B19F99D8B2B /* RDGameKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RDGameKit.xcconfig; sourceTree = "<group>"; };
 		E9B97F5A65052109E3EBDF812F11CDD5 /* Pods-RDGameKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RDGameKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EB6C0D2C7060159358D1564C3B516E84 /* RandomTactic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RandomTactic.swift; sourceTree = "<group>"; };
+		EAA09DA9EEA5ADA35C423C6346C84F43 /* SpinWheel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheel.swift; sourceTree = "<group>"; };
 		EC53AEA6DBADB30B104974D4168EE127 /* Pods-RDGameKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDGameKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F37615B02FCC905930D3AFDB0C84AC4F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F463911A0FAB220D67E98A1B3B500E47 /* Pods-RDGameKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RDGameKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F4957F6255FD64B40238B7E1017F8363 /* RDGameKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = RDGameKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F54C076220F910D8AC87844BAF3CF335 /* HERO_PANEL.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = HERO_PANEL.png; sourceTree = "<group>"; };
 		F5547CB43B3F12FE03D2F8160893ECB4 /* Pods-RDGameKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RDGameKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F7B336175646565B3FAF395224B3E51B /* SpinWheelContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpinWheelContainer.swift; sourceTree = "<group>"; };
-		FAE6C10FD6574400E74600FBD8ECCA6E /* Small LCD Sign.ttf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Small LCD Sign.ttf"; sourceTree = "<group>"; };
+		F5C6A8747AE3C6E5B670184E1C479210 /* RacingGameContainer.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = RacingGameContainer.xib; sourceTree = "<group>"; };
+		F7F523B18F60389CDC3234E69016E38D /* ScratchCardContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ScratchCardContainer.swift; sourceTree = "<group>"; };
 		FDB0DCCEF3A74EBE1CEFE93BF8F506D3 /* Pods-RDGameKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RDGameKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		FF0FFBA99E8F958EF16BE1470A8F6378 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,35 +202,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C125BA4F0F87CBB1B58670B867934C7 /* TicTacToe */ = {
+		06A82020A61841E30DE43359851C21AF /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5FB3586F78A8F4817BCA576E9EA7FE4B /* BoardAppearance.swift */,
-				AE05714C2113CF7784222FCE63AD5432 /* Game.swift */,
-				51D2C0CA069A7C634FAB4F0631BD12B3 /* GameBoard.swift */,
-				0FBBC8EA46FF5B406BC048F702CF884E /* GameBoardLayout.swift */,
-				DD83AEE5C114BC4EDE0511F939434BCA /* GameBoardRenderer.swift */,
-				9E41FB20C48C834DD6707EFDF64EB700 /* GameBoardView.swift */,
-				9CD90EEC8205F53300B908F1BF42CF64 /* NewellAndSimonStrategy.swift */,
-				237276766D0808AF192618E201941FE1 /* OutcomeAnalyst.swift */,
-				EB6C0D2C7060159358D1564C3B516E84 /* RandomTactic.swift */,
-				81E2E4564ECAE889A76D8BFA39387A6E /* Tactics.swift */,
-				6CDE2C002CC998FBB4E598BCDB1E9D0C /* TicTacToeContainer.swift */,
-				4132CFA3F08575462FC2012CE235C44C /* TicTacToeContainer.xib */,
-				D7437BB53CEA4A34FF7AD9317691CEE2 /* UserStrategy.swift */,
+				831F915F9E74699E7A14BF2FFB4C7804 /* Small LCD Sign.ttf */,
 			);
-			name = TicTacToe;
-			path = RDGameKit/Classes/TicTacToe;
+			name = fonts;
+			path = RDGameKit/Classes/fonts;
 			sourceTree = "<group>";
 		};
-		1987E53487EEA0635F1BDA67A44F71C3 /* Pod */ = {
+		213F353D06200451CD2D22598ABB8379 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8164EAF5D1C86CFA4ECA718A5C3A02A4 /* LICENSE */,
-				F4957F6255FD64B40238B7E1017F8363 /* RDGameKit.podspec */,
-				92C256AF0FD5A8537AE5B2D22CD49C48 /* README.md */,
 			);
-			name = Pod;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2B95C08794F1E6CE43138C8AEAA7B430 /* Pods-RDGameKit_Example */ = {
@@ -251,21 +236,45 @@
 			path = "Target Support Files/Pods-RDGameKit_Example";
 			sourceTree = "<group>";
 		};
-		41AC82F4708D8295DCF3DC63C98F4DF8 /* RDGameKit */ = {
+		431008250E75895A59378BB4357EE42A /* RacingGame */ = {
 			isa = PBXGroup;
 			children = (
-				E16C29BDA0F558BD205EE46FDFEBCE13 /* fonts */,
-				1987E53487EEA0635F1BDA67A44F71C3 /* Pod */,
-				8A29757E09F3FE38482ED0EBD8EC3FC9 /* RacingGame */,
-				A3B4F48EA65E2BAC62FB60F47C123CB0 /* Resources */,
-				EDBAB9873669606EDCAC0B8F84F42993 /* ScratchCard */,
-				F2AE058CC28739974172753BE48AE9CB /* SpinWheel */,
-				8218091F3AB333CBA9F0CAA3B9294F40 /* Support Files */,
-				0C125BA4F0F87CBB1B58670B867934C7 /* TicTacToe */,
-				C0E396F9CC4BBC645EFAE644CE458F81 /* TimerGame */,
+				5F87004860922CA5E412A96F568305F3 /* BASE_PANEL.png */,
+				79B1B4D388709232B836F0C1B92D67B5 /* BOLT.png */,
+				2FB69820921AF6195424159E5A710547 /* HEADER.png */,
+				6378A3CD70DE9385AD36763BB4939ABC /* HERO_PANEL.png */,
+				56430D1EC93E993B130D612EBD1BCCAA /* ic_challenter_marker.png */,
+				22CDBE7CF4119C103C70DBF8E21CF215 /* ic_left_foot.png */,
+				2D509643F7A1888A3AF49844582C6DED /* ic_left_foot_hl.png */,
+				BD53FCD2E1F4F464F04E5D510C412D42 /* ic_right_foot.png */,
+				431FF9B6841A2D46055A1F7FD9E95448 /* ic_right_foot_hl.png */,
+				C5C8227C725DA9A416FEBD8C61051670 /* ic_usainbolt_marker.png */,
+				D1768D913126891E1726D56E2F54B098 /* RacingGameContainer.swift */,
+				F5C6A8747AE3C6E5B670184E1C479210 /* RacingGameContainer.xib */,
 			);
-			name = RDGameKit;
-			path = ../..;
+			name = RacingGame;
+			path = RDGameKit/Classes/RacingGame;
+			sourceTree = "<group>";
+		};
+		502F5494594D2C6CC79E0DFAFEC52A55 /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				875043D8035FAD6B0A8AAB693D82F2DF /* BoardAppearance.swift */,
+				9B0E871311BA36E5812C4A0515F463CA /* Game.swift */,
+				B28958314A396F75EC4964C49EEB2068 /* GameBoard.swift */,
+				D405DED0515FCB11C3F6AB231867EA1B /* GameBoardLayout.swift */,
+				4F0122B5ED9BD31EB4ADFA7CFDDF5FC2 /* GameBoardRenderer.swift */,
+				2EFB1A250EDF0CBE7C191BC7E1A28262 /* GameBoardView.swift */,
+				4AC55CE8F7683511709BA207759B9992 /* NewellAndSimonStrategy.swift */,
+				1AAD4535781BEF641020A3AD57BA7283 /* OutcomeAnalyst.swift */,
+				A551A5FC8BD63BA7948258E47EB2AED3 /* RandomTactic.swift */,
+				96C9097F1AF1E3BD3344987B9729F01D /* Tactics.swift */,
+				672EED3BFA6B265A6C8D2718D1E5D6F0 /* TicTacToeContainer.swift */,
+				CECCFC473915B92159AECF3697858944 /* TicTacToeContainer.xib */,
+				254561B4251A59B9C52655F329B0A4E3 /* UserStrategy.swift */,
+			);
+			name = TicTacToe;
+			path = RDGameKit/Classes/TicTacToe;
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -294,6 +303,16 @@
 			path = "Target Support Files/Pods-RDGameKit_Tests";
 			sourceTree = "<group>";
 		};
+		66F17BC1CE66CA641DB090207BBDABAD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F37615B02FCC905930D3AFDB0C84AC4F /* LICENSE */,
+				E0545666C0C2EC0BCDF189CB2F6FE46D /* RDGameKit.podspec */,
+				CD7952099B5B49F05123EABC028A55F0 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -308,44 +327,33 @@
 		8112C2279348E7B5924009D4A9BB1CB0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				41AC82F4708D8295DCF3DC63C98F4DF8 /* RDGameKit */,
+				B3D1A7E4FF9494CA8665F0A976FE95F9 /* RDGameKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		8218091F3AB333CBA9F0CAA3B9294F40 /* Support Files */ = {
+		855F28E55B37056B23E35F3C6D132881 /* TimerGame */ = {
 			isa = PBXGroup;
 			children = (
-				FF0FFBA99E8F958EF16BE1470A8F6378 /* Info.plist */,
-				D33214AF9CC7647298CAECEA7AF5AC84 /* RDGameKit.modulemap */,
-				C834D1FDD47AD1E7A68118C285C5343C /* RDGameKit.xcconfig */,
-				4B4C39D1CDC4101C91EE010038448920 /* RDGameKit-dummy.m */,
-				DBA61CEE921A02408B5A1F9EBB3CFC0D /* RDGameKit-prefix.pch */,
-				4780736D5F098DF16826940E96775804 /* RDGameKit-umbrella.h */,
-				8DAF89E4464FCDF08A3004D079D69771 /* ResourceBundle-RDGameKit-Info.plist */,
+				DBE33E0F77DE7F8F6F54B4711BE5BBEE /* RDExtensions.swift */,
+				A52A50A36F04902D0574087FD85F6100 /* TimerBackView.swift */,
+				B540A4B554BD2237CBE04BA82EB9609E /* TimerPageContainer.swift */,
+				5F4AFBF0FFD5FD7F95E3C79DF5B963B8 /* TimerPageContainer.xib */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/RDGameKit";
+			name = TimerGame;
+			path = RDGameKit/Classes/TimerGame;
 			sourceTree = "<group>";
 		};
-		8A29757E09F3FE38482ED0EBD8EC3FC9 /* RacingGame */ = {
+		8B555E76A40307FFCD60018AD3001927 /* ScratchCard */ = {
 			isa = PBXGroup;
 			children = (
-				5654FB5621797D4D0006B590 /* BOLT.png */,
-				A8F5BD6E4DCB20507BC5FA911047FB91 /* BASE_PANEL.png */,
-				91FA958151B5C414498467EA5F648A06 /* HEADER.png */,
-				F54C076220F910D8AC87844BAF3CF335 /* HERO_PANEL.png */,
-				069B30E3B78C6D27C9B7E029F5413E72 /* ic_challenter_marker.png */,
-				9D2A7D5167405912E0CAD330EC2559B5 /* ic_left_foot.png */,
-				4C2112574F5B74E80592420BCD6C1A0B /* ic_left_foot_hl.png */,
-				B18BC9595D94F023653277EE5C8A4997 /* ic_right_foot.png */,
-				D40BC3C03FDE9585C2AE24474B63DA0C /* ic_right_foot_hl.png */,
-				5968E7FFA8C5DA49D364CD895F901F47 /* ic_usainbolt_marker.png */,
-				0CA1A8DC20CD668E5C8DCEA0B56A31B2 /* RacingGameContainer.swift */,
-				0FC79AC34365C1E97072E9D78AD42034 /* RacingGameContainer.xib */,
+				E65DF906AE526400856C28CA812A81E8 /* ScratchCard.swift */,
+				F7F523B18F60389CDC3234E69016E38D /* ScratchCardContainer.swift */,
+				20AAFDF0B78D875EB0521F2E25FC63E1 /* ScratchCardContainer.xib */,
+				82427C76770B042B20344E710ECD6359 /* ScratchMask.swift */,
 			);
-			name = RacingGame;
-			path = RDGameKit/Classes/RacingGame;
+			name = ScratchCard;
+			path = RDGameKit/Classes/ScratchCard;
 			sourceTree = "<group>";
 		};
 		A135CEB7770BEC63BBDEED56A6CDEC28 /* Products */ = {
@@ -359,11 +367,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A3B4F48EA65E2BAC62FB60F47C123CB0 /* Resources */ = {
+		B3D1A7E4FF9494CA8665F0A976FE95F9 /* RDGameKit */ = {
 			isa = PBXGroup;
 			children = (
+				06A82020A61841E30DE43359851C21AF /* fonts */,
+				66F17BC1CE66CA641DB090207BBDABAD /* Pod */,
+				431008250E75895A59378BB4357EE42A /* RacingGame */,
+				213F353D06200451CD2D22598ABB8379 /* Resources */,
+				8B555E76A40307FFCD60018AD3001927 /* ScratchCard */,
+				C4D83A806BBA5D5664A51819D4BF516D /* SpinWheel */,
+				B6D1D5086D852A03B0539828E56F544C /* Support Files */,
+				502F5494594D2C6CC79E0DFAFEC52A55 /* TicTacToe */,
+				855F28E55B37056B23E35F3C6D132881 /* TimerGame */,
 			);
-			name = Resources;
+			name = RDGameKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B6D1D5086D852A03B0539828E56F544C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C0AC6E7D407CA43426A86F49CD536DD /* Info.plist */,
+				02A760CBF99D9513EBA230AFEE5626C7 /* RDGameKit.modulemap */,
+				E6F698A0C7B279C738879B19F99D8B2B /* RDGameKit.xcconfig */,
+				74BFA03E468A2C7F062419E83116FDB8 /* RDGameKit-dummy.m */,
+				A5DC4BDAF5BCAA06D24EA4C60E572C76 /* RDGameKit-prefix.pch */,
+				900C012C6626B9399ACAA744939CE687 /* RDGameKit-umbrella.h */,
+				40641BCACE13ED8DEBCDB7116452E7F0 /* ResourceBundle-RDGameKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RDGameKit";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -374,25 +407,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C0E396F9CC4BBC645EFAE644CE458F81 /* TimerGame */ = {
+		C4D83A806BBA5D5664A51819D4BF516D /* SpinWheel */ = {
 			isa = PBXGroup;
 			children = (
-				7E95FD8F4E8B5C75FDA0C7EEED8EB539 /* RDExtensions.swift */,
-				DB132929A2518FB9447BE6ABB14DD508 /* TimerBackView.swift */,
-				90B48DA2F0B2E3D3C0B1AA8495707988 /* TimerPageContainer.swift */,
-				8F4BFBA537A3C426380BFE2487D069C7 /* TimerPageContainer.xib */,
+				09D3CEAE5A3BBF66395013733A972C75 /* SpinningWheelAnimator.swift */,
+				EAA09DA9EEA5ADA35C423C6346C84F43 /* SpinWheel.swift */,
+				AA7E3918021A2CA5B37D77F072F8F01F /* SpinWheelContainer.swift */,
+				1AAAE5963E66AFE09E7D5717F02F3944 /* SpinWheelContainer.xib */,
+				575895328B0B22637E9434847E4A76AD /* SpinWheelLayer.swift */,
+				A1841009E905BA8FF37C03E43D8D4A6A /* SpinWheelSlice.swift */,
+				234F5CD1C338A7854802B02CF47CF9E7 /* SpinWheelSliceProtocol.swift */,
+				82C98F4A5E741FA285CFCAC1C27E55A0 /* Utils.swift */,
 			);
-			name = TimerGame;
-			path = RDGameKit/Classes/TimerGame;
-			sourceTree = "<group>";
-		};
-		E16C29BDA0F558BD205EE46FDFEBCE13 /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				FAE6C10FD6574400E74600FBD8ECCA6E /* Small LCD Sign.ttf */,
-			);
-			name = fonts;
-			path = RDGameKit/Classes/fonts;
+			name = SpinWheel;
+			path = RDGameKit/Classes/SpinWheel;
 			sourceTree = "<group>";
 		};
 		E9C2596600912D59AA89F8E3C22AA9E4 /* Targets Support Files */ = {
@@ -402,34 +430,6 @@
 				5E3FC45857CCEEC367920679AC66608B /* Pods-RDGameKit_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		EDBAB9873669606EDCAC0B8F84F42993 /* ScratchCard */ = {
-			isa = PBXGroup;
-			children = (
-				5C5D9BAB2CAB881B756EFB41A6B833ED /* ScratchCard.swift */,
-				3164C809AFDA13EFB684820E8D1576F8 /* ScratchCardContainer.swift */,
-				81FB12EAABF3241869C07E44758406EE /* ScratchCardContainer.xib */,
-				7512320F76AB2F0D5398ECFA9C01F8A0 /* ScratchMask.swift */,
-			);
-			name = ScratchCard;
-			path = RDGameKit/Classes/ScratchCard;
-			sourceTree = "<group>";
-		};
-		F2AE058CC28739974172753BE48AE9CB /* SpinWheel */ = {
-			isa = PBXGroup;
-			children = (
-				5B05DF26E39E4FC79429BA419055A013 /* SpinningWheelAnimator.swift */,
-				88D71CD423FAC94A83639EDDB1CCDD43 /* SpinWheel.swift */,
-				F7B336175646565B3FAF395224B3E51B /* SpinWheelContainer.swift */,
-				9358238C8B6C96840D026BD00FBA0128 /* SpinWheelContainer.xib */,
-				6A9F8A9A428EE557A878F0114A928862 /* SpinWheelLayer.swift */,
-				7F7DE8F08B24F16B8497266EF8BD3474 /* SpinWheelSlice.swift */,
-				D7EEA0A260152FB4AC9F1E328066E892 /* SpinWheelSliceProtocol.swift */,
-				AF7C64EBC268F45DAB718E394813B386 /* Utils.swift */,
-			);
-			name = SpinWheel;
-			path = RDGameKit/Classes/SpinWheel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,7 +503,7 @@
 			buildConfigurationList = D3DFAEDA0CEC44C6D95C380DB9E06C7B /* Build configuration list for PBXNativeTarget "RDGameKit" */;
 			buildPhases = (
 				24DB1C8F206CC88555EC684990CD9ADE /* Headers */,
-				847B47E576BDD1A5E7C907E295FF4302 /* Sources */,
+				46FB95C47E2987F7B579C3DEA018C69B /* Sources */,
 				9C72F774977ADC8A628C146A525BD007 /* Frameworks */,
 				4FE25FF94DB98C1A47B75C2CD6F22E51 /* Resources */,
 			);
@@ -544,6 +544,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					8129EF2515A39D6785A5F68371E991E3 = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -570,7 +575,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5654FB5721797D4D0006B590 /* BOLT.png in Resources */,
 				AFF7CA01CE964B06225AB9B3F117AF18 /* RDGameKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,60 +612,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46FB95C47E2987F7B579C3DEA018C69B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F48475CEA3ECB4F277792BD9CAD40FF /* BASE_PANEL.png in Sources */,
+				6FD461424BE4F171F7C77812C0DDD9D3 /* BoardAppearance.swift in Sources */,
+				86F7025BA61D6F6EE4557618E5D8060B /* BOLT.png in Sources */,
+				6A1245BB04F427DE1A1ADCB0E567246A /* Game.swift in Sources */,
+				D89CD2D1B1EB78701B01F935E961E1F2 /* GameBoard.swift in Sources */,
+				A2E7EED13C5CACC9E0A72D47248B272B /* GameBoardLayout.swift in Sources */,
+				1CFC2921ACDC9929B549A486AA7E9E86 /* GameBoardRenderer.swift in Sources */,
+				138DA726B48666A4A46C8129548E452E /* GameBoardView.swift in Sources */,
+				E49A4D3C7D82C757CB3FCF16F33D8522 /* HEADER.png in Sources */,
+				056D3E3AB8DD9D51B64D9B6A0A43BF52 /* HERO_PANEL.png in Sources */,
+				68ACF8AD814619D40E2A1FAD960D3E9D /* ic_challenter_marker.png in Sources */,
+				CDA96626376B5FB7F49E6E23B715001D /* ic_left_foot.png in Sources */,
+				935B58D005455CE72B5D9829683CC4CA /* ic_left_foot_hl.png in Sources */,
+				C003400829F104D2A56906F569EF1C87 /* ic_right_foot.png in Sources */,
+				ACD90442426E7F1F04373674B3B362A2 /* ic_right_foot_hl.png in Sources */,
+				DD6668423B946F9297069CC4A1723327 /* ic_usainbolt_marker.png in Sources */,
+				8F08E751250C6D44AE59A21AE2678449 /* NewellAndSimonStrategy.swift in Sources */,
+				35ED1744DDFE696A6028B440C758AC23 /* OutcomeAnalyst.swift in Sources */,
+				5D026EBBC534CF57799708DBE703CEF4 /* RacingGameContainer.swift in Sources */,
+				120042056E34991A5BBA468028A9853E /* RacingGameContainer.xib in Sources */,
+				531F05E0917C43C39830AED948619C72 /* RandomTactic.swift in Sources */,
+				19EE288FB52A2D6A2D8E15BED7F44B68 /* RDExtensions.swift in Sources */,
+				2A6DE5DEF14D8765D9346EBA6A1CED10 /* RDGameKit-dummy.m in Sources */,
+				ACE248D9B386160333A1595FF86AD7D2 /* ScratchCard.swift in Sources */,
+				39E386F1BFC3F0AEFF3BE5268B408996 /* ScratchCardContainer.swift in Sources */,
+				111A922800C29D4D4AD1875535C2F674 /* ScratchCardContainer.xib in Sources */,
+				42BEBC1C1629780874B2B487F2BFA9EF /* ScratchMask.swift in Sources */,
+				98049F42DF6D06D0BD7BE8E7DCB29FF4 /* Small LCD Sign.ttf in Sources */,
+				30D862EE4E853636F48FE2CBBF79B101 /* SpinningWheelAnimator.swift in Sources */,
+				C2C79280DBE7F098C6438FB119DE37F7 /* SpinWheel.swift in Sources */,
+				B07637332BFA94A0345FF90088BEF9A8 /* SpinWheelContainer.swift in Sources */,
+				1F86631E1F69086988F0B28C1A5E33BE /* SpinWheelContainer.xib in Sources */,
+				245B16E35AD842015296F6654E3B78F0 /* SpinWheelLayer.swift in Sources */,
+				F74DCEF6454548A77D1E9CDEB261B7BF /* SpinWheelSlice.swift in Sources */,
+				87092BCB9C28FB45661E67C8B364A2D4 /* SpinWheelSliceProtocol.swift in Sources */,
+				EBC02856DDFB5569ECD5ACBBE51BD62A /* Tactics.swift in Sources */,
+				AD21DA6F1322718B58CDE0F9D467CF43 /* TicTacToeContainer.swift in Sources */,
+				ABAACFDAB9F77CE48614FAEA9B7960AA /* TicTacToeContainer.xib in Sources */,
+				88613A659826D747C53E042332B573D2 /* TimerBackView.swift in Sources */,
+				FA6805863207F0168E2F373F714FEF2F /* TimerPageContainer.swift in Sources */,
+				FFC6D10E13E4FB6FAC7B97FFA9A48977 /* TimerPageContainer.xib in Sources */,
+				11AB61AA52CA3CAC6A9A4F767233A53F /* UserStrategy.swift in Sources */,
+				4C4F8300EF1A445C49883FE1D2BED197 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		838A2E35F19DC09B060E7A59D4119F3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0B4156686D70330C6F94CCBB407E75FE /* Pods-RDGameKit_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		847B47E576BDD1A5E7C907E295FF4302 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F55EDE1438505697B0577BFCA2314CF7 /* BASE_PANEL.png in Sources */,
-				0A6C29935EE3A4321295668063FF5AE6 /* BoardAppearance.swift in Sources */,
-				8FB37C28BD33562437F48578453413C0 /* Game.swift in Sources */,
-				3CEF480E14806B77B46BC3B4A93227E0 /* GameBoard.swift in Sources */,
-				2EB52BC9887E238495AC74E78FC19330 /* GameBoardLayout.swift in Sources */,
-				17FA8F33C9C631FF78510EAB9A3F052E /* GameBoardRenderer.swift in Sources */,
-				3DD002961608403B4CBEC5EDD5C3819A /* GameBoardView.swift in Sources */,
-				65C65E852719413B6EE7F79B2C5E6931 /* HEADER.png in Sources */,
-				ED81078C7705C934901E2E9BD49EFABF /* HERO_PANEL.png in Sources */,
-				0E7D98FD3B5F14C2A246C3B2598280C6 /* ic_challenter_marker.png in Sources */,
-				F4D6F0D9538C5E75DDAD1F12A450B077 /* ic_left_foot.png in Sources */,
-				FF45C118A049D5898A46FFD7626CDF96 /* ic_left_foot_hl.png in Sources */,
-				3E4E1F4B402ADAA10200B15948575858 /* ic_right_foot.png in Sources */,
-				E6A1961611ACB283F8A65189279706BC /* ic_right_foot_hl.png in Sources */,
-				9A8FFA173C7E37BB067B0D54B97B725D /* ic_usainbolt_marker.png in Sources */,
-				761427ABC9ABAA08B715D18D72B3462E /* NewellAndSimonStrategy.swift in Sources */,
-				B1486928C73EF4C4BFFE8F974858743D /* OutcomeAnalyst.swift in Sources */,
-				C7DC917066A12D6572F21773AEF4FCD9 /* RacingGameContainer.swift in Sources */,
-				C39772ADE6BCD4F3979286F081EBFFA3 /* RacingGameContainer.xib in Sources */,
-				9206C029D8341894392F7B700436CB7D /* RandomTactic.swift in Sources */,
-				55BAF4FDAE5948F5C7B12A4B6FB6BBDE /* RDExtensions.swift in Sources */,
-				9686A1C8895445EAA173086789958ECB /* RDGameKit-dummy.m in Sources */,
-				A613FFD88C13E66748396C2C32C0C464 /* ScratchCard.swift in Sources */,
-				09A83B50B828011D1C380B4C68F2F1BC /* ScratchCardContainer.swift in Sources */,
-				FB3B6AA26A1C895A452B5EF30CB9F350 /* ScratchCardContainer.xib in Sources */,
-				E7118B70E3982D22D6D5F717E0D306BF /* ScratchMask.swift in Sources */,
-				C41DB95665ACAFD985074D9C8086BDFC /* Small LCD Sign.ttf in Sources */,
-				E5E0E484CE597A3ACC14D52BC773D09D /* SpinningWheelAnimator.swift in Sources */,
-				167C20B07824BF8E36C4009AFC552CFB /* SpinWheel.swift in Sources */,
-				5401670CCD6D5CC29AC714D4933D8C1B /* SpinWheelContainer.swift in Sources */,
-				7C59479CB8EFA7A69F2630681F739C68 /* SpinWheelContainer.xib in Sources */,
-				2BCCE2E7AEF9EA1A52A8803460100F25 /* SpinWheelLayer.swift in Sources */,
-				E8FD71DEFC481A8BED1810AB3322FCEE /* SpinWheelSlice.swift in Sources */,
-				94219D08893229D6E58DC6087A8D7688 /* SpinWheelSliceProtocol.swift in Sources */,
-				F2FB7B22CCF29D89E486F270CFDBC425 /* Tactics.swift in Sources */,
-				E9EC7C9B7AE796F09CC49D2405C2322F /* TicTacToeContainer.swift in Sources */,
-				89DD38181A492EE172B7B9AF9747E890 /* TicTacToeContainer.xib in Sources */,
-				16E2C10224E6F1DFF47CCF8B136D1972 /* TimerBackView.swift in Sources */,
-				38A5DE032F28AFFEAAA324484F93F6C6 /* TimerPageContainer.swift in Sources */,
-				FA6570132D39079753E9D68A6B5E0208 /* TimerPageContainer.xib in Sources */,
-				C7A86685D21ED1A4F8DEF2E8A85C4974 /* UserStrategy.swift in Sources */,
-				E051C417575A8390188FFF2C216B132B /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +703,7 @@
 /* Begin XCBuildConfiguration section */
 		57D5ED1B8A58A263AE68BFA27FBAE7B3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C834D1FDD47AD1E7A68118C285C5343C /* RDGameKit.xcconfig */;
+			baseConfigurationReference = E6F698A0C7B279C738879B19F99D8B2B /* RDGameKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/RDGameKit";
@@ -714,7 +719,7 @@
 		};
 		6FAB178924FE3AC746925E3904545BB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C834D1FDD47AD1E7A68118C285C5343C /* RDGameKit.xcconfig */;
+			baseConfigurationReference = E6F698A0C7B279C738879B19F99D8B2B /* RDGameKit.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -750,6 +755,7 @@
 			baseConfigurationReference = 81D3052D7806D45FFE2E2404D0C5981B /* Pods-RDGameKit_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -774,6 +780,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -916,7 +923,7 @@
 		};
 		CF0BEE2CBD3818768F8E54712D62665D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C834D1FDD47AD1E7A68118C285C5343C /* RDGameKit.xcconfig */;
+			baseConfigurationReference = E6F698A0C7B279C738879B19F99D8B2B /* RDGameKit.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1009,7 +1016,7 @@
 		};
 		F2360EC188DCAF5FC537F092AD64F3F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C834D1FDD47AD1E7A68118C285C5343C /* RDGameKit.xcconfig */;
+			baseConfigurationReference = E6F698A0C7B279C738879B19F99D8B2B /* RDGameKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/RDGameKit";
@@ -1028,6 +1035,7 @@
 			baseConfigurationReference = E9B97F5A65052109E3EBDF812F11CDD5 /* Pods-RDGameKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1053,6 +1061,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
