@@ -39,6 +39,7 @@
 		935B58D005455CE72B5D9829683CC4CA /* ic_left_foot_hl.png in Sources */ = {isa = PBXBuildFile; fileRef = 2D509643F7A1888A3AF49844582C6DED /* ic_left_foot_hl.png */; };
 		9366282D21B101260050F568 /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366282B21B101260050F568 /* SimonGame.swift */; };
 		9366282E21B101260050F568 /* SimonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366282C21B101260050F568 /* SimonView.swift */; };
+		9366283521B4AC780050F568 /* ClosureChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9366283321B4A8B50050F568 /* ClosureChain.swift */; };
 		98049F42DF6D06D0BD7BE8E7DCB29FF4 /* Small LCD Sign.ttf in Sources */ = {isa = PBXBuildFile; fileRef = 831F915F9E74699E7A14BF2FFB4C7804 /* Small LCD Sign.ttf */; };
 		A117367495A4A7EAF4914A0AC01CFB52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		A2E7EED13C5CACC9E0A72D47248B272B /* GameBoardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D405DED0515FCB11C3F6AB231867EA1B /* GameBoardLayout.swift */; };
@@ -135,6 +136,7 @@
 		900C012C6626B9399ACAA744939CE687 /* RDGameKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDGameKit-umbrella.h"; sourceTree = "<group>"; };
 		9366282B21B101260050F568 /* SimonGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonGame.swift; sourceTree = "<group>"; };
 		9366282C21B101260050F568 /* SimonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonView.swift; sourceTree = "<group>"; };
+		9366283321B4A8B50050F568 /* ClosureChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureChain.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96C9097F1AF1E3BD3344987B9729F01D /* Tactics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tactics.swift; sourceTree = "<group>"; };
 		9B0E871311BA36E5812C4A0515F463CA /* Game.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 		9366282A21B101260050F568 /* SimonSays */ = {
 			isa = PBXGroup;
 			children = (
+				9366283321B4A8B50050F568 /* ClosureChain.swift */,
 				9366282B21B101260050F568 /* SimonGame.swift */,
 				9366282C21B101260050F568 /* SimonView.swift */,
 			);
@@ -558,6 +561,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					8129EF2515A39D6785A5F68371E991E3 = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -634,6 +642,7 @@
 				1CFC2921ACDC9929B549A486AA7E9E86 /* GameBoardRenderer.swift in Sources */,
 				138DA726B48666A4A46C8129548E452E /* GameBoardView.swift in Sources */,
 				E49A4D3C7D82C757CB3FCF16F33D8522 /* HEADER.png in Sources */,
+				9366283521B4AC780050F568 /* ClosureChain.swift in Sources */,
 				056D3E3AB8DD9D51B64D9B6A0A43BF52 /* HERO_PANEL.png in Sources */,
 				9366282D21B101260050F568 /* SimonGame.swift in Sources */,
 				68ACF8AD814619D40E2A1FAD960D3E9D /* ic_challenter_marker.png in Sources */,
@@ -766,6 +775,7 @@
 			baseConfigurationReference = 81D3052D7806D45FFE2E2404D0C5981B /* Pods-RDGameKit_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -790,6 +800,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1044,6 +1055,7 @@
 			baseConfigurationReference = E9B97F5A65052109E3EBDF812F11CDD5 /* Pods-RDGameKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1069,6 +1081,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

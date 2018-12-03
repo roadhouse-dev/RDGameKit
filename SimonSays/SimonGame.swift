@@ -32,16 +32,16 @@ public class SimonGame {
     private let simonView: SimonView
     private var currentLevel: SimonGameLevel
 
-    init(simonView: SimonView) {
+    public init(simonView: SimonView) {
         self.simonView = simonView
         currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
     }
 
-    func start() {
+    public func start() {
         begin(level: currentLevel)
     }
 
-    func reset() {
+    public func reset() {
         currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
     }
 

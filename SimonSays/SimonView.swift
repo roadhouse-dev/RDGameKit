@@ -22,40 +22,32 @@ public enum SimonFeedback {
 }
 
 open class SimonView: UIView {
-    weak var delegate: SimonViewDelegate?
+    public weak var delegate: SimonViewDelegate?
 
-    var gameButtons: [SimonGameButton] = []
+    public var gameButtons: [SimonGameButton] = []
 
 
-    func displayGameOver() {}
-    func setScore(_ score: Int) {}
-    func provideFeedback(_ type: SimonFeedback) {}
+    public func displayGameOver() {}
+    public func setScore(_ score: Int) {}
+    public func provideFeedback(_ type: SimonFeedback) {}
 
     /// Highlights the gameButtons that match the values of the indexes array, in order.
-    func showSequence(_ indexes: [Int], delayIntervals: [TimeInterval] = []) {
-        animateSequence(indexes, intervals: delayIntervals, index: 0, delay: 0.0)
+    public func showSequence(_ indexes: [Int]) {
+        animateSequence(indexes, delay: 0.0)
     }
 
     // MARK: Private
-    private func animateSequence(_ indexes: [Int], intervals: [TimeInterval], index: Int, delay: TimeInterval) {
+    private func animateSequence(_ indexes: [Int], delay: TimeInterval) {
+        let chain = ClosureChain()
 
-        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + delay, execute: {
-            DispatchQueue.main.async {
-                self.gameButtons.enumerated().forEach { btnIndex, button in
-                    button.setEnabled(index == btnIndex)
-                }
+        indexes.enumerated().forEach { count, index in
+            chain.chainAfterDelay(count == 0 ? 0.0 : 0.5) {
+                let button = self.gameButtons[index]
+                button.setHighlighted(true)
             }
-        })
-
-        let nextIndex = index + 1
-        guard nextIndex < indexes.count else { return }
-
-        var nextDelay = intervals.last ?? 0.1
-        if index < intervals.count {
-            nextDelay = intervals[index]
         }
 
-        animateSequence(indexes, intervals: intervals, index: nextIndex, delay: nextDelay)
+        chain.resume()
 
     }
 
