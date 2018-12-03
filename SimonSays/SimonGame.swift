@@ -33,7 +33,7 @@ private struct SimonGameLevel {
 }
 
 public class SimonGame {
-    private let simonView: SimonView
+    private var simonView: SimonView
     private var currentLevel: SimonGameLevel
     public var currentScore: Int {
         return currentLevel.levelNumber
@@ -45,8 +45,12 @@ public class SimonGame {
         self.simonView = simonView
         currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
 
-        simonView.delegate = self
+        self.simonView.onGameButtonSelected = { [weak self] index in
+            self?.handleSelectedIndex(index)
+        }
     }
+
+    // MARK: - Public
 
     public func start() {
         begin(level: currentLevel)
@@ -56,14 +60,27 @@ public class SimonGame {
         currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
     }
 
+    // MARK: - Private
+
     private func begin(level: SimonGameLevel) {
         currentLevel = level
-        simonView.showSequence(level.answer)
+        playSequence(level.answer)
     }
-}
 
-extension SimonGame: SimonViewDelegate {
-    public func simonView(_ simonView: SimonView, didSelectIndex index: Int) {
+    private func playSequence(_ indexes: [Int]) {
+        let chain = ClosureChain()
+
+        indexes.enumerated().forEach { offset, index in
+            chain.chainAfterDelay(offset == 0 ? 0.0 : 0.5) { [unowned self] in
+                let button = self.simonView.gameButtons[index]
+                button.setHighlighted(true)
+            }
+        }
+
+        chain.resume()
+    }
+
+    private func handleSelectedIndex(_ index: Int) {
         if currentLevel.isUserGuessCorrect(index) {
 
             currentLevel.correctAnswers += 1
@@ -80,7 +97,6 @@ extension SimonGame: SimonViewDelegate {
             }
 
         } else {
-            simonView.displayGameOver()
             delegate?.simonGameDidGameOver(self)
         }
     }

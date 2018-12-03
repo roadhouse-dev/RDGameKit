@@ -7,9 +7,9 @@
 
 import UIKit
 
-public protocol SimonViewDelegate: class {
-    func simonView(_ simonView: SimonView, didSelectIndex index: Int)
-}
+//public protocol SimonViewDelegate: class {
+//    func simonView(_ simonView: SimonView, didSelectIndex index: Int)
+//}
 
 public protocol SimonGameButton {
     func setHighlighted(_ highlighted: Bool)
@@ -21,36 +21,10 @@ public enum SimonFeedback {
     case correct
 }
 
-open class SimonView: UIView {
-    public weak var delegate: SimonViewDelegate?
+public protocol SimonView {
+    var gameButtons: [SimonGameButton] { get }
+    var onGameButtonSelected: ((Int) -> ())? { get set }
 
-    public var gameButtons: [SimonGameButton] = []
-
-
-    open func displayGameOver() {}
-    open func setScore(_ score: Int) {}
-    open func provideFeedback(_ type: SimonFeedback) {}
-
-    /// Highlights the gameButtons that match the values of the indexes array, in order.
-    public func showSequence(_ indexes: [Int]) {
-        animateSequence(indexes, delay: 0.0)
-    }
-
-    // MARK: Private
-    private func animateSequence(_ indexes: [Int], delay: TimeInterval) {
-        let chain = ClosureChain()
-
-        indexes.enumerated().forEach { count, index in
-            chain.chainAfterDelay(count == 0 ? 0.0 : 0.5) {
-                let button = self.gameButtons[index]
-                button.setHighlighted(true)
-            }
-        }
-
-        chain.resume()
-
-    }
-
-
-
+    func setScore(_ score: Int)
+    func provideFeedback( _ type: SimonFeedback)
 }
