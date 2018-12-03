@@ -22,9 +22,12 @@ class SimonGameView: SimonView {
         buttons.enumerated().forEach { index, button in
             let colors = [#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1), #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1), #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)]
             button.layer.borderColor = colors[index].cgColor
-
             button.translatesAutoresizingMaskIntoConstraints = false
             addSubview(button)
+
+            button.onSelection = { [weak self] in
+                self?.delegate?.simonView(self!, didSelectIndex: index)
+            }
 
             let size: CGFloat = 75
             button.widthAnchor.constraint(equalToConstant: size).isActive = true
@@ -45,8 +48,8 @@ class SimonGameView: SimonView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func newButton() -> UIView {
-        let view = UIView()
+    private func newButton() -> GameButton {
+        let view = GameButton()
         view.layer.borderWidth = 5.0
 
         return view
@@ -54,7 +57,8 @@ class SimonGameView: SimonView {
     
 }
 
-extension UIView: SimonGameButton {
+class GameButton: UIView, SimonGameButton {
+    var onSelection: (() -> ())?
 
     public func setHighlighted(_ highlighted: Bool) {
         backgroundColor = UIColor(cgColor: layer.borderColor!)
@@ -75,5 +79,11 @@ extension UIView: SimonGameButton {
 
     public func setEnabled(_ enabled: Bool) {
 
+    }
+
+    open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let location = touches.first?.location(in: self) else { return }
+        guard bounds.contains(location) else { return }
+        onSelection?()
     }
 }

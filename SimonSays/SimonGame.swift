@@ -35,6 +35,8 @@ public class SimonGame {
     public init(simonView: SimonView) {
         self.simonView = simonView
         currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
+
+        simonView.delegate = self
     }
 
     public func start() {
@@ -46,7 +48,7 @@ public class SimonGame {
     }
 
     private func begin(level: SimonGameLevel) {
-
+        currentLevel = level
         simonView.showSequence(level.answer)
     }
 }
