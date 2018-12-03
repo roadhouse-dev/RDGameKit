@@ -81,9 +81,36 @@ class GameButton: UIView, SimonGameButton {
 
     }
 
+    private var highlightColor: UIColor {
+        return UIColor(cgColor: layer.borderColor!).withAlphaComponent(0.3)
+    }
+
+    // MARK: - Touches
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+
+        backgroundColor = highlightColor
+    }
+
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        guard let location = touches.first?.location(in: self) else { return }
+        guard bounds.contains(location) else {
+            backgroundColor = nil
+            return
+        }
+
+        if backgroundColor == nil {
+            backgroundColor = highlightColor
+        }
+    }
+
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+
         guard let location = touches.first?.location(in: self) else { return }
         guard bounds.contains(location) else { return }
         onSelection?()
+        backgroundColor = nil
     }
 }
