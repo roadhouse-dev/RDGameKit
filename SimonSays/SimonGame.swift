@@ -7,6 +7,10 @@
 
 import Foundation
 
+public protocol SimonGameDelegate: class {
+    func simonGameDidGameOver(_ simonGame: SimonGame)
+}
+
 private struct SimonGameLevel {
     let answer: [Int]
     let levelNumber: Int
@@ -31,6 +35,11 @@ private struct SimonGameLevel {
 public class SimonGame {
     private let simonView: SimonView
     private var currentLevel: SimonGameLevel
+    public var currentScore: Int {
+        return currentLevel.levelNumber
+    }
+
+    public weak var delegate: SimonGameDelegate?
 
     public init(simonView: SimonView) {
         self.simonView = simonView
@@ -72,6 +81,7 @@ extension SimonGame: SimonViewDelegate {
 
         } else {
             simonView.displayGameOver()
+            delegate?.simonGameDidGameOver(self)
         }
     }
 

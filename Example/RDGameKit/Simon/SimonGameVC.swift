@@ -28,6 +28,8 @@ class SimonGameVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        simon.delegate = self
+
         edgesForExtendedLayout = []
 
         gameView.translatesAutoresizingMaskIntoConstraints = false
@@ -46,5 +48,19 @@ class SimonGameVC: UIViewController {
         super.viewDidAppear(animated)
 
         simon.start()
+    }
+}
+
+extension SimonGameVC: SimonGameDelegate {
+    func simonGameDidGameOver(_ simonGame: SimonGame) {
+        let alert = UIAlertController(title: "Game Over",
+                                      message: "Score: \(simonGame.currentScore)",
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Restart", style: .default, handler: { [weak self] _ in
+            self?.simon.reset()
+            self?.simon.start()
+        }))
+
+        present(alert, animated: true, completion: nil)
     }
 }

@@ -14,13 +14,12 @@ class SimonGameView: SimonView {
         super.init(frame: frame)
 
         backgroundColor = #colorLiteral(red: 0.1291881502, green: 0.1486565769, blue: 0.1612132788, alpha: 1)
-
-        let buttons = (0...5).map { _ in
+        let colors = [#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1), #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)]
+        let buttons = (0..<colors.count).map { _ in
             newButton()
         }
 
         buttons.enumerated().forEach { index, button in
-            let colors = [#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1), #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1), #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1), #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)]
             button.layer.borderColor = colors[index].cgColor
             button.translatesAutoresizingMaskIntoConstraints = false
             addSubview(button)
@@ -53,6 +52,11 @@ class SimonGameView: SimonView {
         view.layer.borderWidth = 5.0
 
         return view
+    }
+
+    override func displayGameOver() {
+
+
     }
     
 }

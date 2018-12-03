@@ -27,9 +27,9 @@ open class SimonView: UIView {
     public var gameButtons: [SimonGameButton] = []
 
 
-    public func displayGameOver() {}
-    public func setScore(_ score: Int) {}
-    public func provideFeedback(_ type: SimonFeedback) {}
+    open func displayGameOver() {}
+    open func setScore(_ score: Int) {}
+    open func provideFeedback(_ type: SimonFeedback) {}
 
     /// Highlights the gameButtons that match the values of the indexes array, in order.
     public func showSequence(_ indexes: [Int]) {
