@@ -32,12 +32,20 @@ private struct SimonGameLevel {
     }
 }
 
+private enum SimonGameState {
+    case guessing
+    case highlighting
+    case notPlaying
+}
+
 public class SimonGame {
     private var simonView: SimonView
     private var currentLevel: SimonGameLevel
     public var currentScore: Int {
         return currentLevel.levelNumber
     }
+
+    private var gameState: SimonGameState = .notPlaying
 
     public weak var delegate: SimonGameDelegate?
 
@@ -57,6 +65,7 @@ public class SimonGame {
     }
 
     public func reset() {
+        simonView.setScore(0)
         currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
     }
 
@@ -68,6 +77,8 @@ public class SimonGame {
     }
 
     private func playSequence(_ indexes: [Int]) {
+        gameState = .highlighting
+
         let chain = ClosureChain()
 
         indexes.enumerated().forEach { offset, index in
@@ -77,26 +88,41 @@ public class SimonGame {
             }
         }
 
+        chain.chain {
+            self.gameState = .guessing
+        }
+
         chain.resume()
     }
 
     private func handleSelectedIndex(_ index: Int) {
+        guard gameState == .guessing else { return }
+        
         if currentLevel.isUserGuessCorrect(index) {
 
             currentLevel.correctAnswers += 1
 
             if currentLevel.correctAnswers == currentLevel.answer.count {
+                simonView.provideFeedback(.correct)
+                gameState = .highlighting
+
                 let nextLevelNumber = currentLevel.levelNumber + 1
                 simonView.setScore(nextLevelNumber)
                 let nextLevel = SimonGameLevel(level: nextLevelNumber,
                                                buttonCount: simonView.gameButtons.count)
-                begin(level: nextLevel)
+
+                ClosureChain().chainAfterDelay(1.0) {
+                    self.begin(level: nextLevel)
+                }.resume()
+
 
             } else {
-                simonView.provideFeedback(.correct)
+
             }
 
         } else {
+            gameState = .notPlaying
+            simonView.provideFeedback(.incorrect)
             delegate?.simonGameDidGameOver(self)
         }
     }

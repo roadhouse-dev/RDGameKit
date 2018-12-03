@@ -11,11 +11,13 @@ import RDGameKit
 class SimonButton: UIView, SimonGameButton {
     var onSelection: (() -> ())?
 
+    let haptic = UIImpactFeedbackGenerator(style: .light)
+
     public func setHighlighted(_ highlighted: Bool) {
         backgroundColor = UIColor(cgColor: layer.borderColor!)
         layer.shadowColor = layer.borderColor
         layer.shadowOffset = .zero
-        layer.shadowRadius = 20.0
+        layer.shadowRadius = 25.0
         layer.shadowOpacity = highlighted ? 1.0 : 0.0
 
         layoutIfNeeded()
@@ -33,7 +35,7 @@ class SimonButton: UIView, SimonGameButton {
     }
 
     private var highlightColor: UIColor {
-        return UIColor(cgColor: layer.borderColor!).withAlphaComponent(0.3)
+        return UIColor(cgColor: layer.borderColor!).withAlphaComponent(0.5)
     }
 
     // MARK: - Touches
@@ -41,6 +43,8 @@ class SimonButton: UIView, SimonGameButton {
         super.touchesBegan(touches, with: event)
 
         backgroundColor = highlightColor
+
+        haptic.prepare()
     }
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -63,5 +67,7 @@ class SimonButton: UIView, SimonGameButton {
         guard bounds.contains(location) else { return }
         onSelection?()
         backgroundColor = nil
+
+        haptic.impactOccurred()
     }
 }

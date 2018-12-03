@@ -13,6 +13,10 @@ class SimonGameView: UIView {
     var gameButtons: [SimonGameButton] = []
     var onGameButtonSelected: ((Int) -> ())? = nil
 
+    let scoreLabel = UILabel()
+    let infoLabel = UILabel()
+    let haptic = UINotificationFeedbackGenerator()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -43,6 +47,26 @@ class SimonGameView: UIView {
 
         gameButtons = buttons
 
+        scoreLabel.translatesAutoresizingMaskIntoConstraints = false
+        scoreLabel.textColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+        scoreLabel.textAlignment = .center
+        scoreLabel.numberOfLines = 2
+        addSubview(scoreLabel)
+
+        infoLabel.translatesAutoresizingMaskIntoConstraints = false
+        infoLabel.textColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+        infoLabel.font = UIFont(name: "Noteworthy-Bold", size: 32.0)
+        infoLabel.textAlignment = .center
+        addSubview(infoLabel)
+
+        NSLayoutConstraint.activate([
+            scoreLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            scoreLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32.0),
+
+            infoLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            infoLabel.topAnchor.constraint(equalTo: buttons.last!.bottomAnchor, constant: 64.0)
+            ])
+
 
     }
 
@@ -56,15 +80,35 @@ class SimonGameView: UIView {
 
         return view
     }
+
+    private func showInfoLabel(text: String?, color: UIColor) {
+        infoLabel.text = text
+        infoLabel.textColor = color
+        infoLabel.alpha = 1.0
+        layoutIfNeeded()
+
+        UIView.animate(withDuration: 0.4, delay: 0.6, options: [], animations: {
+            self.infoLabel.alpha = 0
+        }, completion: nil)
+    }
 }
 
 extension SimonGameView: SimonView {
 
     func setScore(_ score: Int) {
-
+        scoreLabel.text = "SCORE\n\(score)"
     }
 
     func provideFeedback(_ type: SimonFeedback) {
+
+        switch type {
+        case .correct:
+            showInfoLabel(text: "Correct!", color: #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1))
+
+        case .incorrect:
+            showInfoLabel(text: "Wrong!", color: #colorLiteral(red: 0.8888163285, green: 0.1818342134, blue: 0.09008045312, alpha: 1))
+            haptic.notificationOccurred(.error)
+        }
 
     }
 }
