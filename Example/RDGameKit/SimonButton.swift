@@ -14,7 +14,7 @@ class SimonButton: UIView, SimonGameButton {
     let haptic = UIImpactFeedbackGenerator(style: .light)
 
     public func setHighlighted(_ highlighted: Bool, timeAllowed: TimeInterval) {
-        backgroundColor = UIColor(cgColor: layer.borderColor!)
+        backgroundColor = backgroundColor?.withAlphaComponent(1.0)
         layer.shadowColor = layer.borderColor
         layer.shadowOffset = .zero
         layer.shadowRadius = 25.0
@@ -24,7 +24,7 @@ class SimonButton: UIView, SimonGameButton {
 
         let animationTime = timeAllowed * 0.9
         UIView.animate(withDuration: animationTime / 2.0, delay: animationTime / 2.0, options: [.curveEaseIn], animations: {
-            self.backgroundColor = .clear
+            self.backgroundColor = self.regularColor
 
         }, completion: { _ in
             self.layer.shadowOpacity = 0.0
@@ -35,8 +35,12 @@ class SimonButton: UIView, SimonGameButton {
 
     }
 
-    private var highlightColor: UIColor {
-        return UIColor(cgColor: layer.borderColor!).withAlphaComponent(0.5)
+    private var highlightColor: UIColor? {
+        return backgroundColor?.withAlphaComponent(0.6)
+    }
+
+    private var regularColor: UIColor? {
+        return backgroundColor?.withAlphaComponent(0.3)
     }
 
     // MARK: - Touches
@@ -52,11 +56,11 @@ class SimonButton: UIView, SimonGameButton {
         super.touchesMoved(touches, with: event)
         guard let location = touches.first?.location(in: self) else { return }
         guard bounds.contains(location) else {
-            backgroundColor = nil
+            backgroundColor = regularColor
             return
         }
 
-        if backgroundColor == nil {
+        if backgroundColor == regularColor {
             backgroundColor = highlightColor
         }
     }
@@ -67,7 +71,7 @@ class SimonButton: UIView, SimonGameButton {
         guard let location = touches.first?.location(in: self) else { return }
         guard bounds.contains(location) else { return }
         onSelection?()
-        backgroundColor = nil
+        backgroundColor = regularColor
 
         haptic.impactOccurred()
     }

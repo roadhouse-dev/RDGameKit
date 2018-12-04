@@ -28,6 +28,7 @@ class SimonGameView: UIView {
 
         buttons.enumerated().forEach { index, button in
             button.layer.borderColor = colors[index].cgColor
+            button.backgroundColor = colors[index].withAlphaComponent(0.3)
             button.translatesAutoresizingMaskIntoConstraints = false
             addSubview(button)
 
@@ -35,14 +36,15 @@ class SimonGameView: UIView {
                 self?.onGameButtonSelected?(index)
             }
 
-            let size: CGFloat = 75
-            button.widthAnchor.constraint(equalToConstant: size).isActive = true
+            button.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5).isActive = true
             button.heightAnchor.constraint(equalTo: button.widthAnchor).isActive = true
 
-            button.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+            if index % 2 == 0 {
+                button.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
 
-            let topConst = (size + 10) * CGFloat(index + 1)
-            button.topAnchor.constraint(equalTo: topAnchor, constant: topConst).isActive = true
+            } else {
+                button.leadingAnchor.constraint(equalTo: buttons[index - 1].trailingAnchor).isActive = true
+            }
         }
 
         gameButtons = buttons
@@ -64,10 +66,15 @@ class SimonGameView: UIView {
             scoreLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32.0),
 
             infoLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            infoLabel.topAnchor.constraint(equalTo: buttons.last!.bottomAnchor, constant: 64.0)
+            infoLabel.topAnchor.constraint(equalTo: buttons.last!.bottomAnchor, constant: 64.0),
+
+            buttons[0].topAnchor.constraint(equalTo: scoreLabel.bottomAnchor, constant: 32.0),
+            buttons[1].topAnchor.constraint(equalTo: buttons[0].topAnchor),
+            buttons[2].topAnchor.constraint(equalTo: buttons[0].bottomAnchor),
+            buttons[3].topAnchor.constraint(equalTo: buttons[2].topAnchor)
             ])
 
-
+        setScore(0)
     }
 
     required init?(coder aDecoder: NSCoder) {
