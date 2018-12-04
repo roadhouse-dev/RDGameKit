@@ -12,7 +12,7 @@ import UIKit
 //}
 
 public protocol SimonGameButton {
-    func setHighlighted(_ highlighted: Bool)
+    func setHighlighted(_ highlighted: Bool, timeAllowed: TimeInterval)
     func setEnabled(_ enabled: Bool)
 }
 
