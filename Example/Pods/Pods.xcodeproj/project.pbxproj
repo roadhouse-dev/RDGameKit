@@ -134,9 +134,9 @@
 		893AE7862A33471FDD9F0937E62A4E1D /* Pods-RDGameKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RDGameKit_Example-resources.sh"; sourceTree = "<group>"; };
 		9006435E0C5BABD754846CCAAD0FCC25 /* RDGameKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDGameKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900C012C6626B9399ACAA744939CE687 /* RDGameKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RDGameKit-umbrella.h"; sourceTree = "<group>"; };
-		9366282B21B101260050F568 /* SimonGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonGame.swift; sourceTree = "<group>"; };
-		9366282C21B101260050F568 /* SimonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimonView.swift; sourceTree = "<group>"; };
-		9366283321B4A8B50050F568 /* ClosureChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureChain.swift; sourceTree = "<group>"; };
+		9366282B21B101260050F568 /* SimonGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimonGame.swift; path = ../RDGameKit/Classes/SimonSays/SimonGame.swift; sourceTree = "<group>"; };
+		9366282C21B101260050F568 /* SimonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimonView.swift; path = ../RDGameKit/Classes/SimonSays/SimonView.swift; sourceTree = "<group>"; };
+		9366283321B4A8B50050F568 /* ClosureChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClosureChain.swift; path = ../RDGameKit/Classes/SimonSays/ClosureChain.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96C9097F1AF1E3BD3344987B9729F01D /* Tactics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tactics.swift; sourceTree = "<group>"; };
 		9B0E871311BA36E5812C4A0515F463CA /* Game.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
