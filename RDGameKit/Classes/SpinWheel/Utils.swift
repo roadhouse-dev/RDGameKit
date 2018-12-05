@@ -86,14 +86,13 @@ public class Utils {
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         
-        for aLayer in layers{
-            if let keys = aLayer.animationKeys() as [String]!{
-                for animKey in keys{
-                    let anim = aLayer.animation(forKey: animKey)
-                    updateValue(forAnimation: anim!, theLayer: aLayer);
-                }
+        for aLayer in layers {
+            guard let keys = aLayer.animationKeys() else { return }
+            for animKey in keys {
+                let anim = aLayer.animation(forKey: animKey)
+                updateValue(forAnimation: anim!, theLayer: aLayer)
             }
-            
+
         }
         
         CATransaction.commit()

@@ -88,7 +88,7 @@ private extension OutcomeAnalyst {
     
     func areWinningMarks(marks: [Mark?]) -> Bool {
         let
-        nonNilMarks = marks.flatMap { $0 },
+        nonNilMarks = marks.compactMap { $0 },
                                     areAllValid = nonNilMarks.count == marks.count,
         areSameMark = Set(nonNilMarks).count == 1
         return areAllValid && areSameMark

@@ -98,7 +98,7 @@ private extension GameBoardView {
         emptyCellRects = layout.cellRectsAtPositions(positions: emptyPositions)
         
         return zip(emptyPositions, emptyCellRects)
-            .flatMap { (position, cellRect) in cellRect.contains(touchLocation) ? position : nil }
+            .compactMap { (position, cellRect) in cellRect.contains(touchLocation) ? position : nil }
             .first
     }
     
