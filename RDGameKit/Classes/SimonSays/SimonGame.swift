@@ -7,11 +7,23 @@
 
 import Foundation
 
-private struct SimonGameLevel {
-    static let minimumSteps = 3
-    static let maximumSteps = 8
-    static let baseTimeInterval = 0.5
+public struct SimonConfig {
+    public static let standard = SimonConfig(minimumSteps: 3,
+                                             maximumSteps: 8,
+                                             baseTimeInterval: 0.5,
+                                             speedIncreasePerLevelPastMaxSteps: 0.1)
 
+    public let minimumSteps: Int
+    public let maximumSteps: Int
+
+    /// The base delay between highlighting each simon game button
+    public let baseTimeInterval: TimeInterval
+
+    /// 0.1 equates to a 10% decrease in base delay per level
+    public let speedIncreasePerLevelPastMaxSteps: Double
+}
+
+private struct SimonGameLevel {
     /// The order of the correct steps
     let answer: [Int]
 
@@ -25,11 +37,11 @@ private struct SimonGameLevel {
     /// Speed increases as level increases beyond the maximum Steps
     let delay: TimeInterval
 
-    init(level: Int, buttonCount: Int) {
+    init(level: Int, buttonCount: Int, config: SimonConfig) {
         levelNumber = level
 
         var sequence = [Int]()
-        let numberOfSteps = min(level + SimonGameLevel.minimumSteps, SimonGameLevel.maximumSteps)
+        let numberOfSteps = min(level + config.minimumSteps, config.maximumSteps)
         for _ in 1...numberOfSteps {
             sequence.append(Int.random(in: 0..<buttonCount))
         }
@@ -37,9 +49,9 @@ private struct SimonGameLevel {
         answer = sequence
         print(sequence)
 
-        let levelsPastMaxSteps = max(0, (level + SimonGameLevel.minimumSteps) - SimonGameLevel.maximumSteps)
-        let delayMultiplier = Double(levelsPastMaxSteps) * 0.1
-        let adjustedTime = SimonGameLevel.baseTimeInterval - (SimonGameLevel.baseTimeInterval * delayMultiplier)
+        let levelsPastMaxSteps = max(0, (level + config.minimumSteps) - config.maximumSteps)
+        let delayMultiplier = Double(levelsPastMaxSteps) * config.speedIncreasePerLevelPastMaxSteps
+        let adjustedTime = config.baseTimeInterval - (config.baseTimeInterval * delayMultiplier)
         delay = max(0.01, adjustedTime)
     }
 
@@ -64,10 +76,12 @@ public class SimonGame {
     }
 
     private var gameState: SimonGameState = .notPlaying
+    private let config: SimonConfig
 
-    public init(simonView: SimonHandler) {
+    public init(simonView: SimonHandler, config: SimonConfig) {
         self.simonView = simonView
-        currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
+        self.config = config
+        currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count, config: config)
 
         self.simonView.onGameButtonSelected = { [weak self] index in
             self?.handleSelectedIndex(index)
@@ -83,13 +97,16 @@ public class SimonGame {
     public func nextLevel() {
         let nextLevelNumber = currentLevel.levelNumber + 1
         let nextLevel = SimonGameLevel(level: nextLevelNumber,
-                                       buttonCount: simonView.gameButtons.count)
+                                       buttonCount: simonView.gameButtons.count,
+                                       config: config)
         begin(level: nextLevel)
     }
 
     public func reset() {
         simonView.setScore(0)
-        currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
+        currentLevel = SimonGameLevel(level: 0,
+                                      buttonCount: simonView.gameButtons.count,
+                                      config: config)
     }
 
     // MARK: - Private

@@ -16,13 +16,13 @@ class SimonGameVC: UIViewController {
     init() {
         gameView = SimonGameView()
         super.init(nibName: nil, bundle: nil)
-        simon = SimonGame(simonView: self)
+        simon = SimonGame(simonView: self, config: SimonConfig.standard)
     }
 
     required init?(coder aDecoder: NSCoder) {
         gameView = SimonGameView()
         super.init(coder: aDecoder)
-        simon = SimonGame(simonView: self)
+        simon = SimonGame(simonView: self, config: SimonConfig.standard)
     }
 
     override func viewDidLoad() {
