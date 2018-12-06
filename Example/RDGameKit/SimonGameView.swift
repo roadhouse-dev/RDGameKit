@@ -98,10 +98,7 @@ class SimonGameView: UIView {
             self.infoLabel.alpha = 0
         }, completion: nil)
     }
-}
-
-extension SimonGameView: SimonView {
-
+    
     func setScore(_ score: Int) {
         scoreLabel.text = "SCORE\n\(score)"
     }

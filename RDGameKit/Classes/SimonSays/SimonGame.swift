@@ -7,10 +7,6 @@
 
 import Foundation
 
-public protocol SimonGameDelegate: class {
-    func simonGameDidGameOver(_ simonGame: SimonGame)
-}
-
 private struct SimonGameLevel {
     static let minimumSteps = 3
     static let maximumSteps = 8
@@ -56,11 +52,12 @@ private struct SimonGameLevel {
 private enum SimonGameState {
     case guessing
     case highlighting
+    case waitingForNextLevel
     case notPlaying
 }
 
 public class SimonGame {
-    private var simonView: SimonView
+    private var simonView: SimonHandler
     private var currentLevel: SimonGameLevel
     public var currentScore: Int {
         return currentLevel.levelNumber
@@ -68,9 +65,7 @@ public class SimonGame {
 
     private var gameState: SimonGameState = .notPlaying
 
-    public weak var delegate: SimonGameDelegate?
-
-    public init(simonView: SimonView) {
+    public init(simonView: SimonHandler) {
         self.simonView = simonView
         currentLevel = SimonGameLevel(level: 0, buttonCount: simonView.gameButtons.count)
 
@@ -83,6 +78,13 @@ public class SimonGame {
 
     public func start() {
         begin(level: currentLevel)
+    }
+
+    public func nextLevel() {
+        let nextLevelNumber = currentLevel.levelNumber + 1
+        let nextLevel = SimonGameLevel(level: nextLevelNumber,
+                                       buttonCount: simonView.gameButtons.count)
+        begin(level: nextLevel)
     }
 
     public func reset() {
@@ -124,27 +126,15 @@ public class SimonGame {
             currentLevel.correctAnswers += 1
 
             if currentLevel.correctAnswers == currentLevel.answer.count {
-                simonView.provideFeedback(.correct)
-                gameState = .highlighting
-
-                let nextLevelNumber = currentLevel.levelNumber + 1
-                simonView.setScore(nextLevelNumber)
-                let nextLevel = SimonGameLevel(level: nextLevelNumber,
-                                               buttonCount: simonView.gameButtons.count)
-
-                ClosureChain().chainAfterDelay(1.0) {
-                    self.begin(level: nextLevel)
-                }.resume()
-
-
-            } else {
+                simonView.setScore(currentLevel.levelNumber + 1)
+                simonView.finishLevel(.correct)
+                gameState = .waitingForNextLevel
 
             }
 
         } else {
             gameState = .notPlaying
-            simonView.provideFeedback(.incorrect)
-            delegate?.simonGameDidGameOver(self)
+            simonView.finishLevel(.incorrect)
         }
     }
 

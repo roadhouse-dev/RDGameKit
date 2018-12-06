@@ -21,10 +21,10 @@ public enum SimonFeedback {
     case correct
 }
 
-public protocol SimonView {
+public protocol SimonHandler {
     var gameButtons: [SimonGameButton] { get }
     var onGameButtonSelected: ((Int) -> ())? { get set }
 
     func setScore(_ score: Int)
-    func provideFeedback( _ type: SimonFeedback)
+    func finishLevel( _ type: SimonFeedback)
 }

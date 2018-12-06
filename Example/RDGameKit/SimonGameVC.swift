@@ -11,24 +11,22 @@ import RDGameKit
 
 class SimonGameVC: UIViewController {
     let gameView: SimonGameView
-    let simon: SimonGame
+    var simon: SimonGame!
 
     init() {
         gameView = SimonGameView()
-        simon = SimonGame(simonView: gameView)
         super.init(nibName: nil, bundle: nil)
+        simon = SimonGame(simonView: self)
     }
 
     required init?(coder aDecoder: NSCoder) {
         gameView = SimonGameView()
-        simon = SimonGame(simonView: gameView)
         super.init(coder: aDecoder)
+        simon = SimonGame(simonView: self)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        simon.delegate = self
 
         edgesForExtendedLayout = []
 
@@ -51,10 +49,33 @@ class SimonGameVC: UIViewController {
     }
 }
 
-extension SimonGameVC: SimonGameDelegate {
-    func simonGameDidGameOver(_ simonGame: SimonGame) {
+extension SimonGameVC: SimonHandler {
+    var gameButtons: [SimonGameButton] {
+        return gameView.gameButtons
+    }
+
+    var onGameButtonSelected: ((Int) -> ())? {
+        get { return gameView.onGameButtonSelected }
+        set { gameView.onGameButtonSelected = newValue }
+    }
+
+    func setScore(_ score: Int) {
+        gameView.setScore(score)
+    }
+
+    func finishLevel(_ type: SimonFeedback) {
+        gameView.provideFeedback(type)
+
+        if type == .incorrect {
+            showGameOver()
+        } else {
+            simon.nextLevel()
+        }
+    }
+
+    func showGameOver() {
         let alert = UIAlertController(title: "Game Over",
-                                      message: "Score: \(simonGame.currentScore)",
+                                      message: "Score: \(simon.currentScore)",
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Restart", style: .default, handler: { [weak self] _ in
             self?.simon.reset()
