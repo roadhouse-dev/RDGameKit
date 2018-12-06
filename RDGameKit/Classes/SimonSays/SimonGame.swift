@@ -47,7 +47,6 @@ private struct SimonGameLevel {
         }
 
         answer = sequence
-        print(sequence)
 
         let levelsPastMaxSteps = max(0, (level + config.minimumSteps) - config.maximumSteps)
         let delayMultiplier = Double(levelsPastMaxSteps) * config.speedIncreasePerLevelPastMaxSteps
