@@ -32,7 +32,7 @@ class SimonButton: UIView, SimonGameButton {
     }
 
     public func setEnabled(_ enabled: Bool) {
-
+        isUserInteractionEnabled = enabled
     }
 
     private var highlightColor: UIColor? {

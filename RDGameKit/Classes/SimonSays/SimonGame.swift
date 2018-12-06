@@ -102,6 +102,8 @@ public class SimonGame {
     private func playSequence(_ indexes: [Int], delay: TimeInterval) {
         gameState = .highlighting
 
+        self.simonView.gameButtons.forEach { $0.setEnabled(false) }
+
         let chain = ClosureChain()
 
         indexes.enumerated().forEach { offset, index in
@@ -112,6 +114,7 @@ public class SimonGame {
         }
 
         chain.chain {
+            self.simonView.gameButtons.forEach { $0.setEnabled(true) }
             self.gameState = .guessing
         }
 
