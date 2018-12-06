@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RDGameKit'
-  s.version          = '0.1.21'
+  s.version          = '0.1.22'
   s.summary          = 'RDGameKit provide some common games.'
 
 # This description is used to generate tags and improve search results.
