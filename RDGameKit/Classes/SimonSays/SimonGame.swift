@@ -109,7 +109,7 @@ public class SimonGame {
         indexes.enumerated().forEach { offset, index in
             chain.chainAfterDelay(delay) { [unowned self] in
                 let button = self.simonView.gameButtons[index]
-                button.setHighlighted(true, timeAllowed: delay)
+                button.setHighlighted(true, timeAllowed: delay, final: index == indexes.count - 1)
             }
         }
 

@@ -13,7 +13,7 @@ class SimonButton: UIView, SimonGameButton {
 
     let haptic = UIImpactFeedbackGenerator(style: .light)
 
-    public func setHighlighted(_ highlighted: Bool, timeAllowed: TimeInterval) {
+    public func setHighlighted(_ highlighted: Bool, timeAllowed: TimeInterval, final: Bool) {
         backgroundColor = backgroundColor?.withAlphaComponent(1.0)
         layer.shadowColor = layer.borderColor
         layer.shadowOffset = .zero
